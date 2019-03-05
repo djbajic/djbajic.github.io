@@ -34,7 +34,7 @@ feature_row3:
     btn_class: "btn--inverse"
 
 feature_row4:
-  - image_path: /images/
+  - image_path: comets_code.png
     title: "Genome scale metabolic modeling of microbial communities"
     alt: "Placeholder Image Left Aligned"
     excerpt: 'Genome-scale metabolic modeling, aka Flux Balance Analysis (FBA), has become one of the most popular platforms for simulation of cellular growth from metabolic networks. Given its realistic prediction of growth (and therfore, fitness), it can be used, for example, for studying genetic networks or exploring fitness landscapes. In collaboration with the group of [Daniel Segre](https://www.bu.edu/segrelab/), I am currently participating in the development of [COMETS](http://www.bu.edu/segrelab/comets/), a platform that uses dynamic FBA to introduce ecological aspects in simulating microbial growth. This will enable us to simulate and predict phenomena such as community assembly or clonal evolution within a realistic ecological setting.' 
