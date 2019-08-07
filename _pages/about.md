@@ -8,7 +8,7 @@ redirect_from:
 ---
 
 
-Everything is constrained by structures. Living organisms, for example, are constrained by the structure of their genome or their metabolism, and externally by their ecological context. I am interested in how these structures influence what organisms do, what they are and what they can become (that is, evolve), and how these structures themselves evolve as a consequence of what organisms do. 
+Everything is constrained by structures. Living organisms, for example, are constrained by the structure of their genome or their metabolism, or their ecological context. I am interested in how these structures influence what organisms do, what they are and what they can become (that is, evolve), and how these structures themselves evolve as a consequence of what organisms do. 
 
 Microbes represent a great system to address these questions: they are amenable to rigorous, quantitative experiments, and we can even simulate them in the computer. Yet, they are complex enough to display fascinating emergent behaviors that we still poorly understand. 
 
