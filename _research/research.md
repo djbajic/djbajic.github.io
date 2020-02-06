@@ -10,7 +10,7 @@ header:
   caption: ""
 
 feature_row1:
-  - image_path: specialization.png
+  - image_path: hierarchies.jpg
     title: "Metabolic specialization in microbes"
     alt: "Placeholder Image Right Aligned"
     excerpt: 'One of the main activities of microbes is eating. What they eat, and how, is one of the main ways in which they interact with other microbes. For instance, if two species compete for the same nutrient, one of them might exclude the other, which will become extinct. However, if two species consume different nutrients, they could be able to coexist. One of my current projects involves understanding how microbes evolve to become specialists on different nutrients, and how this shapes the structure of microbial communities.'
