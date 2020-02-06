@@ -14,6 +14,9 @@ feature_row1:
     title: "Metabolic specialization in microbes"
     alt: "Placeholder Image Right Aligned"
     excerpt: 'One of the main activities of microbes is eating. What they eat, and how, is one of the main ways in which they interact with other microbes. For instance, if two species compete for the same nutrient, one of them might exclude the other, which will become extinct. However, if two species consume different nutrients, they could be able to coexist. One of my current projects involves understanding how microbes evolve to become specialists on different nutrients, and how this shapes the structure of microbial communities.'
+    url: "https://www.sciencedirect.com/science/article/pii/S0958166919300722"
+    btn_label: "Read More"
+    btn_class: "btn--inverse"
 
 feature_row2:
   - image_path: crossfeeding.png
@@ -47,7 +50,7 @@ feature_row5:
     title: "High-order interactions in functional landscapes of microbial consortia"
     alt: "Placeholder Image Right Aligned"
     excerpt: 'When an interaction among organisms is affected by other nearby species, this interaction cannot be defined as pairwise anymore. I am interested in how such "high-order" interactions affect microbial community structure and function. Recently, we quantitatively examined this issue in consortia of starch-degrading Bacilli. We applied tools borrowed from the field of fitness andscapes and genetic interactions to ask how do high-order interactions affect community funcion. The study was done together with [Alicia Sanchez-Gorostiaga](https://scholar.google.com/citations?user=gTO4fx0AAAAJ&hl=en), Melisa Osborne, [Juan Poyatos](http://wwwuser.cnb.csic.es/~jpoyatos/) and [Alvaro Sanchez](http://www.sanchezlaboratory.com/).'
-    url: "https://www.biorxiv.org/content/10.1101/333534v1"
+    url: "https://journals.plos.org/plosbiology/article?id=10.1371/journal.pbio.3000550"
     btn_label: "Read More"
     btn_class: "btn--inverse"
 
