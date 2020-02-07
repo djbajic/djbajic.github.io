@@ -13,5 +13,5 @@ My main motivation is to understand the limits of adaptive evolution. It is well
 
 Microbes represent a great system to address these questions: they are amenable to rigorous, quantitative experiments, and we can even simulate them in the computer. Yet, they are complex enough to display fascinating emergent behaviors that we still poorly understand. 
 
-I was born in Belgrade, then Yugoslavia and today Serbia. I grew up mostly in Madrid, Spain, where I moved with my family when I was 6. Since 2016, I live in the New Haven, Connecticut (USA). As a postdoc in [Alvaro Sanchez's lab](http://sanchezlaboratory.com/). If you want to know more about my work, check out my [current research projects](https://djbajic.github.io/research/) and some finished [pieces](https://djbajic.github.io/publications/).
+I was born in Belgrade, then Yugoslavia and today Serbia. I grew up mostly in Madrid, Spain, where I moved with my family when I was 6. In 2016, I came to New Haven, Connecticut (USA) to work as a postdoc in [Alvaro Sanchez's lab](http://sanchezlaboratory.com/). If you want to know more about my research, check out my [current research projects](https://djbajic.github.io/research/) and some finished [pieces](https://djbajic.github.io/publications/).
 
