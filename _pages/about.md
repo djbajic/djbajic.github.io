@@ -13,5 +13,5 @@ My main motivation is to understand the limits of adaptive evolution. It is well
 
 To answer these questions, I combine experiments and simulations. I generally use microbes, which represent a great system as they are amenable to rigorous, quantitative experiments, and we can even simulate their metabolism in the computer. If you want to know more about my research, check out my [current research projects](https://djbajic.github.io/research/) and some finished [pieces](https://djbajic.github.io/publications/).
 
-I was born in Belgrade, then capital of Yugoslavia and today of Serbia. I grew up mostly in Madrid, Spain, where I moved with my family when I was 6. In 2016, I came to New Haven, Connecticut (USA) where I work as a postdoc in [Alvaro Sanchez's lab](http://sanchezlaboratory.com/) and I enjoy my time with my 1 year old son [Dušan](https://djbajic.github.io/images/dule.jpg).
+I was born in Belgrade, then capital of Yugoslavia and today of Serbia. I grew up mostly in Madrid, Spain, where I moved with my family when I was 6. In 2016, I came to New Haven, Connecticut (USA) where I work as a postdoc in [Alvaro Sanchez's lab](http://sanchezlaboratory.com/) and I enjoy my time with my son [Dušan](https://djbajic.github.io/images/dule.jpg).
 
