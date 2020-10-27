@@ -9,7 +9,7 @@ Dukovski I\*, **Bajić D**\*, Chacón JM\*, Quintin M\*, Vila JCC, Sulheim S, Pa
 
 Lino FSO, **Bajić D**, Vila JCC, Sanchez A, Sommer MOA<sup>\#</sup> (2020) Complex yeast-bacteria interactions shape the yield of industrial ethanol fermentations. <br/> **ResearchSquare** (https://www.researchsquare.com/article/rs-38002/v1)
 
-Kovács K\*, Farkas Z\*, **Bajić D**\*, Kalapis D, Kintses B, Notebaart RA, Poyatos JF, Kemmeren P, Holstege FCP, Pál C, Papp B<sup>\#</sup> (2020) Suboptimal global transcriptional response increases the harmful effects of loss-of-function mutations in yeast. <br/> In review. 
+Kovács K\*, Farkas Z\*, **Bajić D**\*, Kalapis D, Kintses B, Notebaart RA, Poyatos JF, Kemmeren P, Holstege FCP, Pál C, Papp B<sup>\#</sup> (2020) Suboptimal global transcriptional response increases the harmful effects of loss-of-function mutations in yeast. <br/> **Molecular Biology and Evolution** (In press).
 
 Chang C\*, Osborne ML\*, **Bajić, D** & Sanchez A<sup>\#</sup> (2020) Artificially selecting microbial communities using propagule strategies. <br/> **Evolution** 74:10, 2392-2403  (https://doi.org/10.1101/2020.05.01.066282)
 
