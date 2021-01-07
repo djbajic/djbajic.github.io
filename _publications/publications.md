@@ -3,13 +3,11 @@ title: "Publications"
 layout: single
 permalink: /publications/
 ---
+Lino FSO, **Bajić D**, Vila JCC, Sanchez A, Sommer MOA<sup>\#</sup> (2021) Complex yeast-bacteria interactions shape the yield of industrial ethanol fermentations. <br/> **Nature Communications** (Accepted) ([preprint](https://www.researchsquare.com/article/rs-38002/v1))
 
+Dukovski I\*, **Bajić D**\*, Chacón JM\*, Quintin M\*, Vila JCC, Sulheim S, Pacheco AR, Bernstein D, Korolev K, Sanchez A, Harcombe WD, Segrè D <sup>\#</sup> (2020) Computation Of Microbial Ecosystems in Time and Space (COMETS): An open source collaborative platform for modeling ecosystems metabolism. Submitted; <br/> **arXiv** ([preprint](https://arxiv.org/abs/2009.01734))
 
-Dukovski I\*, **Bajić D**\*, Chacón JM\*, Quintin M\*, Vila JCC, Sulheim S, Pacheco AR, Bernstein D, Korolev K, Sanchez A, Harcombe WD, Segrè D <sup>\#</sup> (2020) Computation Of Microbial Ecosystems in Time and Space (COMETS): An open source collaborative platform for modeling ecosystems metabolism. Submitted; <br/> **arXiv** (https://arxiv.org/abs/2009.01734)
-
-Lino FSO, **Bajić D**, Vila JCC, Sanchez A, Sommer MOA<sup>\#</sup> (2020) Complex yeast-bacteria interactions shape the yield of industrial ethanol fermentations. <br/> **ResearchSquare** (https://www.researchsquare.com/article/rs-38002/v1)
-
-Kovács K\*, Farkas Z\*, **Bajić D**\*, Kalapis D, Kintses B, Notebaart RA, Poyatos JF, Kemmeren P, Holstege FCP, Pál C, Papp B<sup>\#</sup> (2020) Suboptimal global transcriptional response increases the harmful effects of loss-of-function mutations in yeast. <br/> **Molecular Biology and Evolution** (In press).
+Kovács K\*, Farkas Z\*, **Bajić D**\*, Kalapis D, Kintses B, Notebaart RA, Poyatos JF, Kemmeren P, Holstege FCP, Pál C, Papp B<sup>\#</sup> (2020) Suboptimal global transcriptional response increases the harmful effects of loss-of-function mutations in yeast. <br/> **Molecular Biology and Evolution**, msaa280 (https://doi.org/10.1093/molbev/msaa280).
 
 Chang C\*, Osborne ML\*, **Bajić, D** & Sanchez A<sup>\#</sup> (2020) Artificially selecting microbial communities using propagule strategies. <br/> **Evolution** 74:10, 2392-2403  (https://doi.org/10.1101/2020.05.01.066282)
 
