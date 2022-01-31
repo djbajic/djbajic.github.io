@@ -1,0 +1,62 @@
+# Welcome to Jekyll!
+#
+# This config file is meant for settings that affect your whole blog, values
+# which you are expected to set up once and rarely need to edit after that.
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'jekyll serve'. If you change this file, please restart the server process.
+
+# Site settings
+title: Djordje Bajić
+email: djordje.bajic@yale.edu
+tagline: This is the webpage of Djordje Bajic
+description: This is the webpage of Djordje Bajic. Here you will find information
+about my research, publications, news, and how to contact me.  
+baseurl: 
+url: "https://djbajic.github.io"
+
+# other info
+twitter_username: metaboli3am
+github_username: djbajic
+scholar_username: "6tfrMqYAAAAJ"
+resgate_username: "Djordje-Bajic"
+orcid_username: "0000-0002-6716-7898"
+linkedin_username: "djordje-bajić-6591a217"
+maplocation: Yale West Campus 
+author: "Djordje Bajić"
+
+map_latitude: 41.25734862831473
+map_longitude: -72.98990529418438
+map_title: 'Microbial Sciences Institute - Yale West Campus'
+#map_apikey: "AIzaSyD3OqSEPg5iyHcriIfz-776IahCE3DhxZY"
+
+include:
+  - .htaccess
+  - _pages
+
+
+
+
+sass:
+  sass_dir: _sass
+
+# Conversion
+markdown: kramdown
+highlighter: rouge
+lsi: false
+excerpt_separator: "\n\n"
+incremental: false
+
+
+
+# Markdown Processing
+kramdown:
+  input: GFM
+  hard_wrap: false
+  auto_ids: true
+  footnote_nr: 1
+  entity_output: as_char
+  toc_levels: 1..6
+  smart_quotes: lsquo,rsquo,ldquo,rdquo
+  enable_coderay: false
+  parse_block_html: true # default for kramdown is false. This will enable using Markdown links
+

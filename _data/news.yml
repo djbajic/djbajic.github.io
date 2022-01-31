@@ -1,0 +1,46 @@
+
+- date: "<b>Upcoming:</b> May 30 - June 3, 2022"
+  headline: "I will be attending the <a target='_blank' href='https://workshops.evolbio.mpg.de/event/43/'>Evolutionary Dynamics and Processes</a> meeting at the Max Planck Institute for Evolutionary Biology in Plon, Germany"
+  fullnews:
+
+- date: "September 17, 2021"
+  headline: "Review on gut microbiota metabolites in autism out in <a target='_blank' href='https://www.mdpi.com/1422-0067/22/18/10052'>International Journal of Molecular Sciences</a>."
+  fullnews:
+  
+- date: "August 20, 2019"
+  headline: "Short perspective on the macroevolutionary consequences of niche construction in microbial metabolism published in <a target='_blank' href='https://www.frontiersin.org/articles/10.3389/fmicb.2021.718082/abstract'>Frontiers in Microbiology</a>."
+  fullnews:
+
+- date: "June 14-16, 2021"
+  headline: "Giving a talk at the <a target='_blank' href='https://www.embl.de/training/events/2021/PEV21-01/programme/index.html'>EMBO Workshop on Predicting Evolution</a>."
+  image: 
+  fullnews:
+
+- date: "April 19-20, 2021"
+  headline: "Attending the <a target='_blank' href='http://nlseb.nl/nlseb2021-nlseb-phd-postdoc-meeting/'>Meeting of the Netherlands Society for Evolutionary Biology (NLSEB)</a>."
+  image:
+  fullnews:
+
+- date: "March 8, 2021"
+  headline: "Paper studying the effect of complex ecological interactions on industrial ethanol fermentations out in <a target='_blank' href=''> Nature Communications </a>."
+  fullnews: This work was a collaboration with PhD student Felipe Lino and Morten Sommer (DTU, Denmark). We found an useful application for the structure-function landscape theory that we developed <a target='_blank' href='https://journals.plos.org/plosbiology/article?id=10.1371/journal.pbio.3000550'>previously</a>. We combined it with metabolic modeling (using COMETS) to characterize complex interactions between contaminants in industrial ethanol fermentation, and identify a potentially useful "industrial probiotic". 
+
+- date: "February 10-12, 2021"
+  headline: "Paper studying redox imbalances and aging using genome-scale metabolic models published in <a target='_blank' href=''>iScience</a>"
+  fullnews:  
+
+- date: "November, 3 2020"
+  headline: "Paper on global transcriptional responses in yeast just published in <a target='_blank' href='https://academic.oup.com/mbe/article/38/3/1137/5952685'>Molecular Biology and Evolution</a>"
+  fullnews: This is the last paper from my PhD. It was done in collaboration with Balazs Papp and Csaba Pal labs at the Biological Research Center in Szeged, Hungary. It was possible partly thanks to an EMBO Short Fellowship from the European Molecular Biology Organization. 
+
+- date: "July 1, 2020"
+  headline: "I am giving a talk at the Max Planck Insitute for Evolutionary Biology in Plon, Germany."
+  fullnews:  
+
+- date: "April 1, 2020"
+  headline: "Review paper on the ecology and evolution of microbial metabolic strategies published in <a target='_blank' href='https://www.sciencedirect.com/science/article/abs/pii/S0958166919300722?via%3Dihub'>Current Opinion in Biotechnology</a>."
+  fullnews:  
+
+- date: "December 12, 2019"
+  headline: "Paper on how high-order interactions distort the functional landscape of microbial consortia published in <a target='_blank' href='https://journals.plos.org/plosbiology/article?id=10.1371/journal.pbio.3000550'>PLoS Biology</a>"
+  fullnews:

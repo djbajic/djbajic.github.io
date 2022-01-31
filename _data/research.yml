@@ -1,0 +1,50 @@
+
+- title: "Development of new tools genome-scale metabolic modeling of eco-evolutionary processes"
+  description: Constraint-based metabolic modeling has emerged as one of the most effective tools for predicting metabolic 
+               traits from genomes. This offers the unique possibility of exploring empirically calibrated fitness landscapes 
+               on a large scale. Working as part of a large collaboration with the laboratories of
+               Daniel Segre,
+               Will Harcombe
+               and Kiril Korolev,
+               I have helped develop COMETS, a state of the art package for the "Computation of microbial ecosystems in time and space" [<a target="_blank" href="">Nature Protocols 2021</a>].
+               I am currently using COMETS in several of the projects outlined below.
+
+- title: "Mechanisms of global epistasis in metabolism"
+  description: 
+
+- title: "The evolution of metabolic strategies in microbes"
+  description: Metabolic strategies, such as the decision to assimilate two substrates simultaneously versus
+               sequentially (this latter known as diauxie) can play a key role in structuring microbial communities. In a
+               collaboration with Sotaro Takano (AIST, Japan), we are currently trying to understand how does the structure of metabolic
+               networks determine such strategies (see this Perspective in [<a target="_blank" href="https://www.sciencedirect.com/science/article/pii/S0958166919300722">Current Opinion in Biotechnology 2021</a>].
+
+- title: "Macroevolutionary dynamics and innovation in microbial metabolism"
+  description: Understanding the origin of metabolic diversity requires understanding how macroevolutionary
+               processes, such as innovation and diversification, play out in the microbial world. We
+               recently laid out several exciting future directions in this field in a Perspectives paper
+               [<a target="_blank" href="https://www.frontiersin.org/articles/10.3389/fmicb.2021.718082/abstract">Frontiers in Microbiology 2021</a>].
+               Currently, we are collaborating with Maria Rebolleda-Gomez 
+               to explore the dynamics of microbial metabolic innovation using COMETS."
+
+
+- title: "Ecological structure-function landscapes"
+  description: Fitness landscapes (and more generally genotype-phenotype maps) are essentially an abstract device that 
+               can be used to represent how the function of any system arises from the interaction between its components. 
+               Applying this logic, I recently studied the “structure-function landscape’ of amylolytic microbial consortia
+               composed of combinations of six Bacilli speces [<a target="_blank" href="https://journals.plos.org/plosbiology/article?id=10.1371/journal.pbio.3000550">PLoS Biology 2019</a>].
+               Our approach allowed us to identify ecological interactions between species, which are analogous to epistatic 
+               interactions on a fitness landscape. Furthermore, combining this approach with the theory of biochemical kinetics
+               allowed us to mechanistically explain these interactions. 
+
+
+               Subsequently, in collaboration with Felipe Lino and Morten Sommmer (DTU, Denmark), we also combined this framework with COMETS 
+               to disentangle how complex ecological interactions affect biofuel production in sugar-cane fermenters 
+               [<a target="_blank" href="https://www.nature.com/articles/s41467-021-21844-7">Nature Communications 2021</a>].
+               This helped us identify a new potential "industrial probiotic", which proved the usefulness of our theory in more 
+               applied settings.   
+
+
+               Currently, we are following up on these studies by investigating whether known properties of fitness landscapes 
+               can translate to ecological structure function landscapes, helping us design robust synthetic consortia with 
+               a specific function.   
+

@@ -1,0 +1,588 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Đorđe Bajić  /  Ђорђе Бајић</title>
+  <meta name="description" content="Djordje Bajić">
+  <link rel="stylesheet" href="http://localhost:4000/css/main.css">
+  <link rel="canonical" href="http://localhost:4000/">
+<link rel="shortcut icon" type ="image/x-icon" href="http://localhost:4000/images/icon.png">
+
+<link rel="stylesheet" href="http://localhost:4000/fonts/fa/css/font-awesome.min.css">
+<link rel="stylesheet" href="http://localhost:4000/fonts/fa/css/academicons.css">
+
+<script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-62176420-1', 'auto');
+    ga('send', 'pageview');
+</script>
+
+
+
+<!-- Javascripts ---->
+<script src="https://maps.googleapis.com/maps/api/js?key="></script>
+
+<script>
+function initialize()
+{
+var mapProp = {
+  center: new google.maps.LatLng( 41.25734862831473, -72.98990529418438 ),
+  zoom: 5,
+  scrollwheel: false,
+    mapTypeControl: false,
+    streetViewControl: false,
+  mapTypeId: google.maps.MapTypeId.SATELLITE,
+styles:[
+    {
+        "featureType": "all",
+        "elementType": "labels",
+        "stylers": [
+            {
+                "visibility": "shown"
+            }
+        ]
+    },
+    {
+        "featureType": "administrative.country",
+        "elementType": "geometry",
+        "stylers": [
+            {
+                "visibility": "simplified"
+            }
+        ]
+    },
+    {
+        "featureType": "administrative.country",
+        "elementType": "geometry.stroke",
+        "stylers": [
+            {
+                "visibility": "on"
+            }
+        ]
+    },
+    {
+        "featureType": "administrative.province",
+        "elementType": "geometry",
+        "stylers": [
+            {
+                "visibility": "on"
+            }
+        ]
+    },
+    {
+        "featureType": "administrative.locality",
+        "elementType": "geometry",
+        "stylers": [
+            {
+                "visibility": "simplified"
+            },
+            {
+                "weight": "0.80"
+            }
+        ]
+    },
+    {
+        "featureType": "administrative.locality",
+        "elementType": "labels",
+        "stylers": [
+            {
+                "visibility": "simplified"
+            },
+            {
+                "color": "#393939"
+            },
+            {
+                "weight": "0.80"
+            }
+        ]
+    },
+    {
+        "featureType": "administrative.neighborhood",
+        "elementType": "geometry",
+        "stylers": [
+            {
+                "visibility": "simplified"
+            },
+            {
+                "weight": "0.70"
+            }
+        ]
+    },
+    {
+        "featureType": "administrative.neighborhood",
+        "elementType": "labels",
+        "stylers": [
+            {
+                "visibility": "off"
+            },
+            {
+                "color": "#313131"
+            },
+            {
+                "weight": "0.80"
+            }
+        ]
+    },
+    {
+        "featureType": "landscape",
+        "elementType": "all",
+        "stylers": [
+            {
+                "visibility": "on"
+            }
+        ]
+    },
+    {
+        "featureType": "landscape",
+        "elementType": "geometry",
+        "stylers": [
+            {
+                "visibility": "off"
+            },
+            {
+                "hue": "#ff0000"
+            }
+        ]
+    },
+    {
+        "featureType": "landscape",
+        "elementType": "labels",
+        "stylers": [
+            {
+                "visibility": "off"
+            }
+        ]
+    },
+    {
+        "featureType": "landscape.man_made",
+        "elementType": "geometry",
+        "stylers": [
+            {
+                "visibility": "on"
+            },
+            {
+                "color": "#944242"
+            }
+        ]
+    },
+    {
+        "featureType": "landscape.man_made",
+        "elementType": "geometry.fill",
+        "stylers": [
+            {
+                "visibility": "off"
+            }
+        ]
+    },
+    {
+        "featureType": "landscape.natural",
+        "elementType": "geometry",
+        "stylers": [
+            {
+                "visibility": "on"
+            },
+            {
+                "color": "#ffffff"
+            }
+        ]
+    },
+    {
+        "featureType": "landscape.natural.landcover",
+        "elementType": "geometry",
+        "stylers": [
+            {
+                "visibility": "off"
+            }
+        ]
+    },
+    {
+        "featureType": "landscape.natural.terrain",
+        "elementType": "geometry",
+        "stylers": [
+            {
+                "visibility": "off"
+            },
+            {
+                "saturation": "-1"
+            }
+        ]
+    },
+    {
+        "featureType": "poi",
+        "elementType": "all",
+        "stylers": [
+            {
+                "visibility": "off"
+            }
+        ]
+    },
+    {
+        "featureType": "poi",
+        "elementType": "geometry",
+        "stylers": [
+            {
+                "visibility": "off"
+            }
+        ]
+    },
+    {
+        "featureType": "poi.attraction",
+        "elementType": "geometry",
+        "stylers": [
+            {
+                "visibility": "off"
+            }
+        ]
+    },
+    {
+        "featureType": "road",
+        "elementType": "geometry.stroke",
+        "stylers": [
+            {
+                "visibility": "off"
+            }
+        ]
+    },
+    {
+        "featureType": "road.highway",
+        "elementType": "geometry.fill",
+        "stylers": [
+            {
+                "color": "#292929"
+            },
+            {
+                "weight": "0.80"
+            }
+        ]
+    },
+    {
+        "featureType": "road.highway",
+        "elementType": "geometry.stroke",
+        "stylers": [
+            {
+                "visibility": "off"
+            },
+            {
+                "color": "#494949"
+            },
+            {
+                "saturation": "-85"
+            },
+            {
+                "weight": "0.90"
+            }
+        ]
+    },
+    {
+        "featureType": "road.arterial",
+        "elementType": "geometry.fill",
+        "stylers": [
+            {
+                "color": "#888888"
+            },
+            {
+                "visibility": "on"
+            },
+            {
+                "weight": "0.80"
+            }
+        ]
+    },
+    {
+        "featureType": "road.local",
+        "elementType": "geometry",
+        "stylers": [
+            {
+                "visibility": "on"
+            },
+            {
+                "weight": "0.80"
+            }
+        ]
+    },
+    {
+        "featureType": "road.local",
+        "elementType": "geometry.fill",
+        "stylers": [
+            {
+                "color": "#7f7f7f"
+            },
+            {
+                "weight": "0.80"
+            }
+        ]
+    },
+    {
+        "featureType": "transit",
+        "elementType": "all",
+        "stylers": [
+            {
+                "visibility": "off"
+            }
+        ]
+    },
+    {
+        "featureType": "transit",
+        "elementType": "geometry",
+        "stylers": [
+            {
+                "visibility": "on"
+            }
+        ]
+    },
+    {
+        "featureType": "transit.line",
+        "elementType": "geometry",
+        "stylers": [
+            {
+                "visibility": "on"
+            }
+        ]
+    },
+    {
+        "featureType": "transit.station",
+        "elementType": "geometry",
+        "stylers": [
+            {
+                "visibility": "off"
+            }
+        ]
+    },
+    {
+        "featureType": "transit.station.airport",
+        "elementType": "geometry",
+        "stylers": [
+            {
+                "visibility": "off"
+            }
+        ]
+    },
+    {
+        "featureType": "transit.station.bus",
+        "elementType": "geometry",
+        "stylers": [
+            {
+                "visibility": "off"
+            }
+        ]
+    },
+    {
+        "featureType": "transit.station.rail",
+        "elementType": "geometry",
+        "stylers": [
+            {
+                "visibility": "off"
+            }
+        ]
+    },
+    {
+        "featureType": "water",
+        "elementType": "geometry",
+        "stylers": [
+            {
+                "color": "#dddddd"
+            },
+            {
+                "visibility": "on"
+            }
+        ]
+    },
+    {
+        "featureType": "water",
+        "elementType": "geometry.fill",
+        "stylers": [
+            {
+                "color": "#d7d9da"
+            },
+            {
+                "visibility": "on"
+            }
+        ]
+    },
+    {
+        "featureType": "water",
+        "elementType": "geometry.stroke",
+        "stylers": [
+            {
+                "visibility": "off"
+            },
+            {
+                "color": "#8d8282"
+            }
+        ]
+        }
+    ]
+  };
+
+ var mymarker = {
+        path: 'M 0,0 C -2,-20 -10,-22 -10,-30 A 10,10 0 1,1 10,-30 C 10,-22 2,-20 0,0 z M -2,-30 a 2,2 0 1,1 4,0 2,2 0 1,1 -4,0',
+        fillColor: '#c9ff33',
+        fillOpacity: 1,
+        strokeColor: '#c9ff33',
+        strokeWeight: 2,
+        scale: 1,
+        };
+
+
+var map=new google.maps.Map(document.getElementById("googleMaps")
+  ,mapProp);
+var marker = new google.maps.Marker({
+    position: new google.maps.LatLng(41.25734862831473, -72.98990529418438 ),
+    map: map,
+    icon: mymarker,
+//    animation: google.maps.Animation.DROP,
+    title: "Microbial Sciences Institute - Yale West Campus"
+});
+}
+
+google.maps.event.addDomListener(window, 'load', initialize);
+</script>
+
+
+
+
+<!--- altmetric ---->
+<script type='text/javascript' src='https://d1bxh8uas1mnw7.cloudfront.net/assets/embed.js'></script>
+
+<!---    <base target="_blank"> --->
+
+</head>
+
+
+  <body>
+
+    <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+  <div class="container-fluid">
+	<div class="navbar-header">
+	  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse-1" aria-expanded="false"  >
+		<span class="sr-only">Toggle navigation</span>
+		<span class="icon-bar"></span>
+		<span class="icon-bar"></span>
+		<span class="icon-bar"></span>
+	  </button>
+	
+   <a class="navbar-brand" href="http://localhost:4000/"> Ђорђе Бајић &nbsp&nbsp / &nbsp&nbsp Đorđe Bajić &nbsp&nbsp/ &nbsp&nbsp Yale University </a>
+	</div>
+	<div class="collapse navbar-collapse" id="navbar-collapse-1">
+	  <ul class="nav navbar-nav navbar-right">
+		<li><a href="http://localhost:4000/">Home</a></li>
+		<li><a href="http://localhost:4000/research">Research</a></li>
+		<li><a href="http://localhost:4000/publications">Publications</a></li>
+		<li><a href="http://localhost:4000/contact">Contact</a></li>
+	  </ul>
+	</div>
+  </div>
+</div>
+
+
+
+
+    <div class="container-fluid">
+      <div class="row">
+          <div id="homeid" class="col-sm-8">
+        <!-- <h2>Djordje Bajić</h2> -->
+<div style="text-align: justify">
+	<figure align="center">
+  <p><img src="http://localhost:4000/images/djordje.jpeg" style="width: 635px" /></p>
+</figure>
+
+<p>I am currently a postdoctoral scientist at the Microbial Sciences Institute and the Department
+of Ecology and Evolution at Yale University. I am broadly interested in understanding <strong>how structure 
+gives rise to function in biology</strong>. For example, how the genes in a genome combine to determine a 
+trait (genotype-phenotype maps), or how the species composition of a community result in, say, the 
+consumption of a given nutrient.</p>
+
+<p>Currently, my main focus is on understanding how the structure of microbial <strong>metabolic networks</strong> 
+(the reactions encoded in a genome) shapes and constrains the evolution of traits such as growth 
+rates or metabolic secretions. This question fascinating the evolutionary, but also the ecological 
+standpoint, because metabolic traits govern microbial resource use and sharing, and are therefore 
+critical for their ecological interactions.</p>
+
+<p>To explore these questions, I combine <strong>evolutionary theory</strong>, <strong>metabolic modeling</strong> and 
+microbiological <strong>experiments</strong>. This interdisciplinary approach is aimed at understanding both 
+the physiological mechanisms linking metabolic genotypes to phenotypes, and the ecological 
+and evolutionary forces ultimately shaping these mechanisms. If you want to know more about my 
+work, check out my <a href="https://djbajic.github.io/research/">current research projects</a> 
+and some <a href="https://djbajic.github.io/publications/">finished pieces</a>.</p>
+
+<p>I was born in Belgrade, then the capital of Yugoslavia and today of Serbia. As a child, I emigrated 
+with my family to Madrid, Spain, where I grew up. In 2016, I moved to New Haven, 
+Connecticut to join <a href="http://sanchezlaboratory.com/">Alvaro Sanchez’s lab</a> at Yale</p>
+
+<p><a target="_blank" href="http://localhost:4000/images/djordje_cv.pdf">
+<i class="fa fa-file-pdf-o"></i>  Download my CV </a></p>
+
+<p>
+<a target="_blank" href="http://scholar.google.com/citations?user=6tfrMqYAAAAJ" class="waves-effect waves-teal btn-flat my-google-scholar-link"><i class="ai ai-google-scholar"></i></a> -
+<a target="_blank" href="https://twitter.com/metaboli3am" class="waves-effect waves-teal btn-flat my-twitter-link"><i class="fa fa-twitter"></i></a> -
+<a target="_blank" href="http://www.researchgate.net/profile/Djordje-Bajic" class="waves-effect waves-teal btn-flat my-researchgate-link"><i class="ai ai-researchgate"></i> </a> -
+<a target="_blank" href="http://orcid.org/0000-0002-6716-7898" class="waves-effect waves-teal btn-flat my-orcid-link"><i class="ai ai-orcid"></i></a> -
+<a target="_blank" href="http://www.linkedin.com/pub/djordje-bajić-6591a217" class="waves-effect waves-teal btn-flat my-linkedin-link"><i class="fa fa-linkedin"></i></a>
+</p>
+
+<p><br /><br /></p>
+
+
+</div>
+  </div>
+  <div id="newsid" class="col-sm-4" >
+	
+<div class="well">
+<h4>News</h4>
+
+
+<b>Upcoming:</b> May 30 - June 3, 2022
+<p><em>I will be attending the <a target='_blank' href='https://workshops.evolbio.mpg.de/event/43/'>Evolutionary Dynamics and Processes</a>. meeting at the Max Planck Institute for Evolutionary Biology in Plon, Germany</em></p>
+
+September 17, 2021
+<p><em>Review on gut microbiota metabolites in autism out in <a target='_blank' href='https://www.mdpi.com/1422-0067/22/18/10052'>International Journal of Molecular Sciences</a>.</em></p>
+
+August 20, 2019
+<p><em>Short perspective on the macroevolutionary consequences of niche construction in microbial metabolism published in <a target='_blank' href='https://www.frontiersin.org/articles/10.3389/fmicb.2021.718082/abstract'>Frontiers in Microbiology</a>.</em></p>
+
+June 14-16, 2021
+<p><em>Giving a talk at the <a target='_blank' href='https://www.embl.de/training/events/2021/PEV21-01/programme/index.html'>EMBO Workshop on Predicting Evolution</a>.</em></p>
+
+April 19-20, 2021
+<p><em>Attending the <a target='_blank' href='http://nlseb.nl/nlseb2021-nlseb-phd-postdoc-meeting/'>Meeting of the Netherlands Society for Evolutionary Biology (NLSEB)</a>.</em></p>
+
+March 8, 2021
+<p><em>Paper studying the effect of complex ecological interactions on industrial ethanol fermentations out in <a target='_blank' href=''> Nature Communications </a>.</em></p>
+
+
+<h4><a href="http://localhost:4000/allnews.html">... see all News</a></h4>
+    
+    </div>
+
+  </div>
+
+      </div>
+    </div>
+
+    <div id="footer" class="panel">
+  <div class="panel-footer">
+	<div class="container-fluid">
+	  <div class="row">
+		<div class="col-sm-4">
+			
+		  <p>&copy 2021 Djordje Bajić. Modified from <a href="https://www.allanlab.org/">Allan Lab</a> and <a href="https://jacopogrilli.github.io/">Jacopo Grilli</a> websites. 
+
+	  </div>
+	</div>
+  </div>
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="http://localhost:4000/js/bootstrap.min.js"></script>
+
+
+  </body>
+
+</html>
