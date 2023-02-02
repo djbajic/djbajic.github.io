@@ -1,17 +1,76 @@
 
-- title: The Impact of Gut Microbiota-Derived Metabolites in Autism Spectrum Disorders
-  authors: Peralta-Marzal L.N.\#; N. Prince, D. Bajić and L. Roussin, L. Naudon, S. Rabot, J. Garssen,  A.D. Kraneveld, P. Pérez-Pardo \#
-  journal: International Journal of Molecular Sciences 
-  journalshort: International Journal of Molecular Sciences 
-  reference: "22(18):10052"
-  year: 2021
-  doi: 10.3390/ijms221810052
+
+- title: Emergent coexistence in multispecies microbial communities
+  authors: Chang, C-Y.; D. Bajić\#, J.C.C. Vila, S. Estrela, A. Sanchez\#
+  journal: bioRxiv 
+  journalshort: 
+  reference: 492860
+  year: 2022
+  doi: 10.1101/2022.05.20.492860 
   arxiv:
   biorxiv: 
   news: 
   description: 
-  image: dummy.png
-  pmid: 34576216
+  image: 
+  mendeley: 
+  researchgate: 
+  pmid: 
+  preprint: 0
+  highlight: 0
+
+
+- title: Emergent ecosystem functions follow simple quantitative rules
+  authors: Diaz-Colunga, J\*; A. Skwara\*, K., J.C.C. Vila, D. Bajić\#, A. Sanchez\#
+  journal: bioRxiv 
+  journalshort: 
+  reference: 496987
+  year: 2022
+  doi: 10.1101/2022.06.21.496987 
+  arxiv:
+  biorxiv: 
+  news: 
+  description: 
+  image: 
+  mendeley: 
+  researchgate: 
+  pmid: 
+  preprint: 0
+  highlight: 0
+
+
+- title: The community-function landscape of microbial consortia
+  authors: Sanchez, A.; D. Bajić, J. Diaz-Colunga, A. Skwara, J.C.C. Vila, S. Kuehn
+  journal: ecoevoRxiv 
+  journalshort: 
+  reference: 2022/6/28
+  year: 2022
+  doi: 10.32942/osf.io/s4wau
+  arxiv:
+  biorxiv: 
+  news: 
+  description: 
+  image: 
+  mendeley: 
+  researchgate: 
+  pmid: 
+  preprint: 0
+  highlight: 0
+
+- title: Global epistasis on fitness landscapes
+  authors: Diaz-Colunga, J; A. Skwara, K. Gowda, R. Diaz-Uriarte, M. Tikhonov, D. Bajić, A. Sanchez
+  journal: arXiv 
+  journalshort: arXiv
+  reference: arXiv:2210.03677
+  year: 2022
+  doi: 10.48550/arXiv.2210.03677
+  arxiv:
+  biorxiv: https://arxiv.org/abs/2210.03677
+  news: 
+  description: 
+  image: 
+  mendeley: 
+  researchgate: 
+  pmid: 
   preprint: 0
   highlight: 0
 
@@ -20,7 +79,7 @@
   journal: Cell Systems 
   journalshort: Cell Systems
   reference: 13(1):29-42
-  year: 2021
+  year: 2022
   doi: 10.1016/j.cels.2021.09.011
   arxiv:
   biorxiv: https://www.biorxiv.org/content/10.1101/2020.03.09.984278v1
@@ -51,6 +110,24 @@
   preprint: 0
   highlight: 1
 
+- title: Complex yeast--bacteria interactions affect the yield of industrial ethanol fermentation
+  authors: de Oliveira Lino, F.S.; D. Bajić, J.C.C. Vila, A. Sánchez, M.O.A. Sommer
+  journal: Nature communications
+  journalshort: Nature Communications
+  reference: "12(1):1-12"
+  year: 2021
+  doi: 10.1038/s41467-021-21844-7
+  arxiv:
+  biorxiv: 
+  news: 
+  description: 
+  image: dummy.png
+  mendeley: 
+  researchgate: 
+  pmid: 33686084
+  preprint: 0
+  highlight: 0
+
 - title: The macroevolutionary consequences of niche construction in microbial metabolism
   authors: Bajić D \#; M. Rebolleda-Gomez, M.M. Muñoz, A. Sánchez \# 
   journal: Frontiers in Microbiology 
@@ -69,21 +146,19 @@
   preprint: 0
   highlight: 0
 
-- title: Complex yeast--bacteria interactions affect the yield of industrial ethanol fermentation
-  authors: de Oliveira Lino, F.S.; D. Bajic, J.C.C. Vila, A. Sánchez, M.O.A. Sommer
-  journal: Nature communications
-  journalshort: Nature Communications
-  reference: "12(1):1-12"
+- title: The Impact of Gut Microbiota-Derived Metabolites in Autism Spectrum Disorders
+  authors: Peralta-Marzal L.N.\#; N. Prince, D. Bajić, L. Roussin, L. Naudon, S. Rabot, J. Garssen,  A.D. Kraneveld, P. Pérez-Pardo \#
+  journal: International Journal of Molecular Sciences 
+  journalshort: International Journal of Molecular Sciences 
+  reference: "22(18):10052"
   year: 2021
-  doi: 10.1038/s41467-021-21844-7
+  doi: 10.3390/ijms221810052
   arxiv:
   biorxiv: 
   news: 
   description: 
   image: dummy.png
-  mendeley: 
-  researchgate: 
-  pmid: 33686084
+  pmid: 34576216
   preprint: 0
   highlight: 0
 

@@ -1,6 +1,42 @@
 
-- date: "<b>Upcoming:</b> May 30 - June 3, 2022"
-  headline: "I will be attending the <a target='_blank' href='https://workshops.evolbio.mpg.de/event/43/'>Evolutionary Dynamics and Processes</a> meeting at the Max Planck Institute for Evolutionary Biology in Plon, Germany"
+- date: "<b>Upcoming</b>: February 15, 2023"
+  headline: "I will give a talk at the Symposium on Evolution in Communities jointly organized by the BioSB and NLSEB in Amsterdam."
+  fullnews:
+
+- date: "November 15, 2022"
+  headline: "I started a <b>new position as Assistant Professor</b> at the Technical University in Delft. Excited to move to the Netherlands and join the Dept. of Biotechnology @ TU Delft!"
+  fullnews:
+
+- date: "October 11, 2022"
+  headline: "I just gave a talk at the Biological Research Center of the Hungarian Academy of Sciences in Szeged, Hungary. Happy to catch up with old friends and set up new collabs!"
+  fullnews:
+
+- date: "October 7, 2022"
+  headline: "New preprint where we use toy fitness landscapes to better understand the emergence of <a target='_blank' href='https://arxiv.org/abs/2210.03677'>global epistasis</a>."
+  fullnews:
+
+- date: "June 30 - July 2, 2022"
+  headline: "I will be attending the <a target='_blank' href='https://www.femsbelgrade2022.org/'>FEMS Conference on Microbiology</a> in Belgrade, Serbia."
+  fullnews:
+
+- date: "June 28, 2022"
+  headline: "New preprint perspective piece where we discuss the concept of the <a target='_blank' href='https://ecoevorxiv.org/repository/view/3721/'>structure-function landscape of microbial consortia</a>."
+  fullnews:
+
+- date: "June 26, 2022"
+  headline: "New preprint led by <a target='_blank' href='https://jdiazc9.github.io/'>Juan Díaz Colunga</a> and Abby Skwara, where we show how <a target='_blank' href='https://www.biorxiv.org/content/10.1101/2022.06.21.496987v1.abstract'>emergent ecosystem functions follow simple quantitative rules</a>."
+  fullnews:
+
+- date: "May 20, 2022"
+  headline: New preprint led by <a target='_blank' href='https://www.changyuchang.name/'>Chang-Yu Chang</a>  where we highlight the importance of community context to explain coexistence in microbial communities". Just posted on in <a target='_blank' href='https://www.biorxiv.org/content/10.1101/2022.05.20.492860v2'>BioRxiv</a>."
+  fullnews:
+
+- date: "January 19, 2022"
+  headline: "We studied metabolic self-organization and functional attractors in synthetic microbial communities. The paper, led by <a target='_blank' href='https://sylvieestrela.weebly.com/'>Sylvie Estrela</a>, is out in <a target='_blank' href='https://www.sciencedirect.com/science/article/pii/S2405471221003793'>Cell Systems</a>."
+  fullnews:
+
+- date: "October 11, 2021"
+  headline: "We built a new, improved version of COMETS, a metabolic modeling platform for the computation of microbial ecosystems in time and space. It was just published in <a target='_blank' href='https://www.nature.com/articles/s41596-021-00593-3'>Nature Protocols</a>. Great collaboration co-led with Ilija Dukovski, Jeremy Chacon and Mike Quintin. Thanks to all co-authors!"
   fullnews:
 
 - date: "September 17, 2021"

@@ -1,0 +1,18 @@
+- name: Djordje Bajić
+  photo: djordje_pic.jpg
+  country: srb
+  info: Assistant Professor, started November 2022
+  email: D.Bajic@tudelft.nl
+  number_educ: 3
+  education3: Postdoc with <a href="https://sanchezlab.weebly.com/">Alvaro Sánchez</a>, <a href="https://eeb.yale.edu/">Dept. of Ecology & Evolution</a>, Yale University, New Haven, CT, USA
+  education2: Ph.D. in Biophysics with  <a href="">Juan Poyatos</a>, <a href="http://www.cnb.csic.es/index.php/en/">Centro Nacional de Biotecnología CSIC</a>, Madrid, Spain
+  education1: B.Sc. in Biochemistry and M.Sc. in Biophysics, Universidad Autónoma de Madrid, Madrid, Spain
+  description: I am broadly interested in understanding how structure gives rise to function in biological systems. For example, how the genes in a genome combine to determine a trait (genotype-phenotype maps), or how the species within a community collectively contribute to a function (for example, degradation of a compound). I like to think in terms of general principles, which allow us to make predictions and come up with engineering strategies.   
+  twitterusername: metaboli3am
+  githubusername:  djbajic
+  scholarusername: "6tfrMqYAAAAJ"
+  resgateusername: "Djordje-Bajic-2"
+  orcidusername: "0000-0002-6716-7898"
+  cv: "CV_Djordje_Bajic.pdf"
+  past: 0
+ 

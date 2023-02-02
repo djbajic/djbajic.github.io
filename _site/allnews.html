@@ -8,6 +8,7 @@
   <title>Home</title>
   <meta name="description" content="Djordje Bajić">
   <link rel="stylesheet" href="http://localhost:4000/css/main.css">
+  <link rel="stylesheet" href="http://localhost:4000/css/flag-icon.css">
   <link rel="canonical" href="http://localhost:4000/allnews.html">
 <link rel="shortcut icon" type ="image/x-icon" href="http://localhost:4000/images/icon.png">
 
@@ -33,7 +34,7 @@
 function initialize()
 {
 var mapProp = {
-  center: new google.maps.LatLng( 41.25734862831473, -72.98990529418438 ),
+  center: new google.maps.LatLng( 51.99145374035248, 4.3824941063469 ),
   zoom: 5,
   scrollwheel: false,
     mapTypeControl: false,
@@ -434,11 +435,11 @@ styles:[
 var map=new google.maps.Map(document.getElementById("googleMaps")
   ,mapProp);
 var marker = new google.maps.Marker({
-    position: new google.maps.LatLng(41.25734862831473, -72.98990529418438 ),
+    position: new google.maps.LatLng(51.99145374035248, 4.3824941063469 ),
     map: map,
     icon: mymarker,
 //    animation: google.maps.Animation.DROP,
-    title: "Microbial Sciences Institute - Yale West Campus"
+    title: "Faculty of Applied Sciences - TU Delft"
 });
 }
 
@@ -451,6 +452,9 @@ google.maps.event.addDomListener(window, 'load', initialize);
 <!--- altmetric ---->
 <script type='text/javascript' src='https://d1bxh8uas1mnw7.cloudfront.net/assets/embed.js'></script>
 
+<!--- NEW FOR ICONS! --->
+<script src="https://kit.fontawesome.com/b192b7b723.js" crossorigin="anonymous"></script>
+  
 <!---    <base target="_blank"> --->
 
 </head>
@@ -467,14 +471,15 @@ google.maps.event.addDomListener(window, 'load', initialize);
 		<span class="icon-bar"></span>
 		<span class="icon-bar"></span>
 	  </button>
-	
-   <a class="navbar-brand" href="http://localhost:4000/"> Ђорђе Бајић &nbsp&nbsp / &nbsp&nbsp Đorđe Bajić &nbsp&nbsp/ &nbsp&nbsp Yale University </a>
+   
+   <a class="navbar-brand" href="http://localhost:4000/">  &nbsp&nbsp Metabolism of Microbial Communities &nbsp&nbsp @ &nbsp&nbsp <span style="font-family:Arial; font-weight: bold;">T</span><span style="font-family:Arial; color: #00A6D6; font-weight: bold;">U</span><span style="font-family:Arial;">Delft</span>
 	</div>
 	<div class="collapse navbar-collapse" id="navbar-collapse-1">
 	  <ul class="nav navbar-nav navbar-right">
 		<li><a href="http://localhost:4000/">Home</a></li>
 		<li><a href="http://localhost:4000/research">Research</a></li>
 		<li><a href="http://localhost:4000/publications">Publications</a></li>
+   		<li><a href="http://localhost:4000/team">Team</a></li>
 		<li><a href="http://localhost:4000/contact">Contact</a></li>
 	  </ul>
 	</div>
@@ -491,7 +496,70 @@ google.maps.event.addDomListener(window, 'load', initialize);
 
 <p>
 <strong>
-<b>Upcoming:</b> May 30 - June 3, 2022</strong>  — I will be attending the <a target="_blank" href="https://workshops.evolbio.mpg.de/event/43/">Evolutionary Dynamics and Processes</a> meeting at the Max Planck Institute for Evolutionary Biology in Plon, Germany <br />
+<b>Upcoming</b>: February 15, 2023</strong>  — I will give a talk at the Symposium on Evolution in Communities jointly organized by the BioSB and NLSEB in Amsterdam. <br />
+<em></em>
+
+</p>
+
+<p>
+<strong>
+November 15, 2022</strong>  — I started a <b>new position as Assistant Professor</b> at the Technical University in Delft. Excited to move to the Netherlands and join the Dept. of Biotechnology @ TU Delft! <br />
+<em></em>
+
+</p>
+
+<p>
+<strong>
+October 11, 2022</strong>  — I just gave a talk at the Biological Research Center of the Hungarian Academy of Sciences in Szeged, Hungary. Happy to catch up with old friends and set up new collabs! <br />
+<em></em>
+
+</p>
+
+<p>
+<strong>
+October 7, 2022</strong>  — New preprint where we use toy fitness landscapes to better understand the emergence of <a target="_blank" href="https://arxiv.org/abs/2210.03677">global epistasis</a>. <br />
+<em></em>
+
+</p>
+
+<p>
+<strong>
+June 30 - July 2, 2022</strong>  — I will be attending the <a target="_blank" href="https://www.femsbelgrade2022.org/">FEMS Conference on Microbiology</a> in Belgrade, Serbia. <br />
+<em></em>
+
+</p>
+
+<p>
+<strong>
+June 28, 2022</strong>  — New preprint perspective piece where we discuss the concept of the <a target="_blank" href="https://ecoevorxiv.org/repository/view/3721/">structure-function landscape of microbial consortia</a>. <br />
+<em></em>
+
+</p>
+
+<p>
+<strong>
+June 26, 2022</strong>  — New preprint led by <a target="_blank" href="https://jdiazc9.github.io/">Juan Díaz Colunga</a> and Abby Skwara, where we show how <a target="_blank" href="https://www.biorxiv.org/content/10.1101/2022.06.21.496987v1.abstract">emergent ecosystem functions follow simple quantitative rules</a>. <br />
+<em></em>
+
+</p>
+
+<p>
+<strong>
+May 20, 2022</strong>  — New preprint led by <a target="_blank" href="https://www.changyuchang.name/">Chang-Yu Chang</a>  where we highlight the importance of community context to explain coexistence in microbial communities”. Just posted on in <a target="_blank" href="https://www.biorxiv.org/content/10.1101/2022.05.20.492860v2">BioRxiv</a>.” <br />
+<em></em>
+
+</p>
+
+<p>
+<strong>
+January 19, 2022</strong>  — We studied metabolic self-organization and functional attractors in synthetic microbial communities. The paper, led by <a target="_blank" href="https://sylvieestrela.weebly.com/">Sylvie Estrela</a>, is out in <a target="_blank" href="https://www.sciencedirect.com/science/article/pii/S2405471221003793">Cell Systems</a>. <br />
+<em></em>
+
+</p>
+
+<p>
+<strong>
+October 11, 2021</strong>  — We built a new, improved version of COMETS, a metabolic modeling platform for the computation of microbial ecosystems in time and space. It was just published in <a target="_blank" href="https://www.nature.com/articles/s41596-021-00593-3">Nature Protocols</a>. Great collaboration co-led with Ilija Dukovski, Jeremy Chacon and Mike Quintin. Thanks to all co-authors! <br />
 <em></em>
 
 </p>

@@ -8,6 +8,7 @@
   <title>Page Not Found</title>
   <meta name="description" content="Page not found. Your pixels are in another canvas.">
   <link rel="stylesheet" href="http://localhost:4000/css/main.css">
+  <link rel="stylesheet" href="http://localhost:4000/css/flag-icon.css">
   <link rel="canonical" href="http://localhost:4000/404.html">
 <link rel="shortcut icon" type ="image/x-icon" href="http://localhost:4000/images/icon.png">
 
@@ -33,7 +34,7 @@
 function initialize()
 {
 var mapProp = {
-  center: new google.maps.LatLng( 41.25734862831473, -72.98990529418438 ),
+  center: new google.maps.LatLng( 51.99145374035248, 4.3824941063469 ),
   zoom: 5,
   scrollwheel: false,
     mapTypeControl: false,
@@ -434,11 +435,11 @@ styles:[
 var map=new google.maps.Map(document.getElementById("googleMaps")
   ,mapProp);
 var marker = new google.maps.Marker({
-    position: new google.maps.LatLng(41.25734862831473, -72.98990529418438 ),
+    position: new google.maps.LatLng(51.99145374035248, 4.3824941063469 ),
     map: map,
     icon: mymarker,
 //    animation: google.maps.Animation.DROP,
-    title: "Microbial Sciences Institute - Yale West Campus"
+    title: "Faculty of Applied Sciences - TU Delft"
 });
 }
 
@@ -451,6 +452,9 @@ google.maps.event.addDomListener(window, 'load', initialize);
 <!--- altmetric ---->
 <script type='text/javascript' src='https://d1bxh8uas1mnw7.cloudfront.net/assets/embed.js'></script>
 
+<!--- NEW FOR ICONS! --->
+<script src="https://kit.fontawesome.com/b192b7b723.js" crossorigin="anonymous"></script>
+  
 <!---    <base target="_blank"> --->
 
 </head>
@@ -467,14 +471,15 @@ google.maps.event.addDomListener(window, 'load', initialize);
 		<span class="icon-bar"></span>
 		<span class="icon-bar"></span>
 	  </button>
-	
-   <a class="navbar-brand" href="http://localhost:4000/"> Ђорђе Бајић &nbsp&nbsp / &nbsp&nbsp Đorđe Bajić &nbsp&nbsp/ &nbsp&nbsp Yale University </a>
+   
+   <a class="navbar-brand" href="http://localhost:4000/">  &nbsp&nbsp Metabolism of Microbial Communities &nbsp&nbsp @ &nbsp&nbsp <span style="font-family:Arial; font-weight: bold;">T</span><span style="font-family:Arial; color: #00A6D6; font-weight: bold;">U</span><span style="font-family:Arial;">Delft</span>
 	</div>
 	<div class="collapse navbar-collapse" id="navbar-collapse-1">
 	  <ul class="nav navbar-nav navbar-right">
 		<li><a href="http://localhost:4000/">Home</a></li>
 		<li><a href="http://localhost:4000/research">Research</a></li>
 		<li><a href="http://localhost:4000/publications">Publications</a></li>
+   		<li><a href="http://localhost:4000/team">Team</a></li>
 		<li><a href="http://localhost:4000/contact">Contact</a></li>
 	  </ul>
 	</div>

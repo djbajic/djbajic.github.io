@@ -12,15 +12,14 @@ permalink: /contact/
 <br>
 
 <i class="fa fa-map-marker"></i> 
-Yale University <br>
-Department of Ecology and Evolutionary Biology <br>
-Microbial Sciences Institute <br>
-840 West Campus Drive 
-06477, Orange, CT, USA  <br>
+TU Delft <br>
+Faculty of Applied Sciences <br>
+Van der Maasweg 9
+2629 HZ Delft, Netherlands  <br>
 
-<i class="fa fa-envelope-o"></i> djordje.bajic[at]yale[dot]edu
+<i class="fa fa-envelope-o"></i> D.Bajic [at] tudelft [dot] nl
 
-<i class="fa fa-phone"></i> +1 (203) 435-0559
+<i class="fa fa-phone"></i> +31 684 50 3693
 
 
 <br>

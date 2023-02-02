@@ -1,5 +1,5 @@
 ---
-title: "Djordje Bajić - Research"
+title: "Research"
 layout: textlay
 excerpt: "Djordje Bajić -- Research"
 sitemap: false
@@ -8,77 +8,101 @@ permalink: /research/
 
 # Research
 
+We are interested in understanding the principles governing the structure and function of microbial communities. Uncovering these principles will help us rationally engineer communities to advance sustainability or human health. 
+
+Below is a glimpse of questions and projects we are currently working on. 
+
+<br/><br/>
+
+---
 
 
-![]({{ site.url }}{{ site.baseurl }}/images/comets_code.png){: style="width: 350px; float: left; margin: 0px  10px"}
-**Genome-scale metabolic modeling of eco-evolutionary processes**. Constraint-based metabolic 
-modeling has emerged as one of the most effective tools for predicting metabolic traits from genomes. This biological 
-realism, together with the quick and easy computation of , offers the 
-unique possibility of exploring empirically calibrated fitness landscapes on a large scale. 
+![]({{ site.url }}{{ site.baseurl }}/images/pubpic/gpmap.png){: style="width: 350px; float: left; margin: 0px  10px"}
+**Predicting community assembly by understanding metabolic evolution**
+
+Traits such as growth or metabolite exchange rates govern how microbes use and share resources, and are thus a key determinant of species interactions. However, predicting these quantitative metabolic traits from genomes currently remains a major challenge. 
+
+One of the main goals of our group is to understand the evolution of quantitative metabolic traits and their mapping onto genotypes. This will help us predict what genomic features determine the successful establishment of a microbe in a community, paving the way to predicting the assembly of microbiomes and their response to environmental changes.
+
+[[Science, 2018](https://www.science.org/doi/abs/10.1126/science.aat1168)]
+[[Cell Systems, 2022](https://www.sciencedirect.com/science/article/pii/S2405471221003793)]
+[[Preprint, 2022](https://www.biorxiv.org/content/10.1101/2022.05.20.492860v2)]
+
+<br/><br/>
+
+---
 
 
-Working as part of a large 
-collaboration with the laboratories of [Daniel Segre](https://www.bu.edu/segrelab/), [Will Harcombe](http://www.wrharcombe.org/), 
-and [Kiril Korolev](https://www.kirillkorolev.com/), I have helped develop COMETS, a state of the art package for the 
-"Computation of microbial ecosystems in time and space" [\[Nature Protocols 2021\]](https://www.nature.com/articles/s41596-021-00593-3). I am currently using COMETS in several 
-of the projects outlined below.
+![]({{ site.url }}{{ site.baseurl }}/images/pubpic/starch_epsilon.png){: style="width: 300px; float: right; margin: 0px  10px"}
+**Predicting the function of microbial communities** 
+Microbial communities can perform a wide range of services, and promise new sustainable solutions across biotechnology, agriculture, or human health. In order to harness these services, we need to lear how to predict the function that a community will have based on its composition. 
+
+To accomplish this task, we recently extended the theory of fitness landscapes to characterize how the collective function of a community maps to its composition - the ecological structure-function map. We are currently exploring the properties of this map, and how it can help us engineer microbial communities. 
+
+[[Plos Biology, 2019](https://journals.plos.org/plosbiology/article?id=10.1371/journal.pbio.3000550)]
+[[Nature Communications, 2021](https://www.nature.com/articles/s41467-021-21844-7)]
+[[Preprint, 2022](https://www.biorxiv.org/content/10.1101/2022.06.21.496987v1)]
+[[Preprint Review, 2022](https://ecoevorxiv.org/repository/view/3721/)]
+[[Preprint, 2022](https://arxiv.org/abs/2210.03677)]
+
+<br/><br/>
+
+---
 
 
-<br />
-<br />
+
+![]({{ site.url }}{{ site.baseurl }}/images/pubpic/comets_code.png){: style="width: 250px; float: left; margin: 0px  10px"}
+**Developing computational tools to simulate microbial ecosystems** 
+We develop state of the art computational tools to simulate microbial communities and ecosystems. We are part of the developer team of COMETS, a software platform for the "Computation of microbial ecosystems in time and space" 
 
 
-![]({{ site.url }}{{ site.baseurl }}/images/sugarswap.png){: style="width: 200px; float:right; margin: 0px  10px"}
-**The evolution of metabolic strategies in microbes.** Metabolic strategies, such as the decision to assimilate two 
-substrates simultaneously versus sequentially (this latter known as diauxie) can play a key role in structuring microbial 
-communities. In a collaboration with Sotaro Takano (AIST, Japan), we are currently trying to understand how does the 
-structure of metabolic networks determine such strategies and their evolvability (see this Perspective in [\[Current Opinion in Biotechnology, 2021\]](https://www.sciencedirect.com/science/article/pii/S0958166919300722).
+[[Nature Protocols 2021](https://www.nature.com/articles/s41596-021-00593-3)]
+<br/><br/>
+<br/><br/>
+<br/><br/>
+<br/><br/>
+<br/><br/>
 
-<br />
+---
 
-![]({{ site.url }}{{ site.baseurl }}/images/innovations.png){: style="width: 350px; float: left; margin: 0px  10px"}
-**Macroevolutionary dynamics and innovation in microbial metabolism.** Understanding the origin of metabolic diversity 
-requires understanding how macroevolutionary processes, such as innovation and diversification, play out in the microbial 
-world. We recently laid out several exciting directions in this field in a Perspectives paper [\[Frontiers in Microbiology 2021\]](https://www.frontiersin.org/articles/10.3389/fmicb.2021.718082/abstract).
-Currently, in collaboration with [Maria Rebolleda-Gómez](https://mrebolleda.github.io/) we are exploring the dynamics of 
-microbial metabolic innovation and resource diversification using COMETS.
+![]({{ site.url }}{{ site.baseurl }}/images/pubpic/electrosynth.png){: style="width: 400px; float: right; margin: 0px  10px"}
+**e-COMM: Understanding and engineering electrosynthetic communities**
+As part of the [Zero Emission Biotechnology Program]() at TU Delft, we are steering our expertise to study biofilm microbial communities transforming green electricity and CO2 to valuable products. This project is a collaboration with the groups of [Ludovic Jourdin](https://www.tudelft.nl/tnw/over-faculteit/afdelingen/biotechnology/research-sections/bioprocess-engineering/ludovic-jourdin-group) and [Jean-Marc Daran](https://www.tudelft.nl/tnw/over-faculteit/afdelingen/biotechnology/research-sections/industrial-microbiology/jean-marc-daran-group) in our department.
 
-<br />
-
-
-**Global epistasis and the predictability of evolution in microbial metabolism.** A key property observed across many empirical 
-fitness landscapes is the presence of global epistasis, whose hallmark is the systematic scaling of mutation fitness effects 
-with background fitness. However, which genes should be expected to exhibit strong or weak global epistasis, and why, remains 
-poorly understood. We are currently using genome-scale metabolic models to study the mechanisms of global epistasis in metabolism, 
-and combining it with COMETS to study how global epistasis affects the predictability of evolution. 
-
-<br />
-
-![]({{ site.url }}{{ site.baseurl }}/images/starch_epsilon.png){: style="width: 500px; float: right; margin: 0px  10px"}
-**Ecological structure-function landscapes.** Fitness landscapes (and more generally genotype-phenotype maps) are essentially 
-a theoretical device that can be used to represent how the function of any system arises from the interaction between its 
-components. Applying this logic, I recently studied the “structure-function landscape’ of amylolytic microbial consortia
-composed of combinations of six Bacilli speces [\[PLoS Biology 2019\]](https://journals.plos.org/plosbiology/article?id=10.1371/journal.pbio.3000550).
-Our approach allowed us to identify ecological interactions between species, which are analogous to epistatic interactions 
-on a fitness landscape. Furthermore, combining this approach with the theory of biochemical kinetics allowed us to 
-mechanistically explain these interactions. 
+<br/><br/>
+<br/><br/>
+<br/><br/>
+<br/><br/>
+<br/><br/>
 
 
-Subsequently, in collaboration with Felipe Lino and [Morten Sommmer](https://www.biosustain.dtu.dk/research/research-groups/bacterial-synthetic-biology-morten-sommer), 
-we also combined this framework with COMETS to disentangle how complex ecological interactions affect biofuel production in 
-sugar-cane fermenters [\[Nature Communications 2021\]](https://www.nature.com/articles/s41467-021-21844-7).
-This helped us identify a new potential "industrial probiotic", which proved the usefulness of our theory in more 
-applied settings.
+---
 
 
-Currently, we are following up on these studies by investigating whether known properties of fitness landscapes can translate 
-to ecological structure function landscapes, helping us design robust synthetic consortia with a specific function.
+
+![]({{ site.url }}{{ site.baseurl }}/images/innovations.png){: style="width: 400px; float: left; margin: 0px  10px"}
+**Using metabolic models to understand ecology and evolution**. 
+We are also interested in a wide range of topics in ecology and evolution. For instance, we collaborate with Sotaro Takano (AIST, Japan) to study the evolution of metabolic strategies in microbes. We also collaborate with [Maria Rebolleda-Gómez](https://mrebolleda.github.io/) to study macroevolutionary dynamics and innovation in microbial metabolism.
+
+For these projects, our approach is to use  metabolic models, which are a great tool to explore empirically calibrated, realistic genotype-phenotype maps.
+
+<br/><br/>
+
+[[Current Opinion in Biotechnology, 2021](https://www.sciencedirect.com/science/article/pii/S0958166919300722)]
+[[Frontiers in Microbiology](https://www.frontiersin.org/articles/10.3389/fmicb.2021.718082/full)]
+
+<br/><br/>
+<br/><br/>
+<br/><br/>
 
 
-<br />
 
 
-<br />
+
+
+
+
+
 
 
 

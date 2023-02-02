@@ -5,9 +5,10 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Đorđe Bajić  /  Ђорђе Бајић</title>
+  <title>Djordje Bajić  /  Ђорђе Бајић</title>
   <meta name="description" content="Djordje Bajić">
   <link rel="stylesheet" href="http://localhost:4000/css/main.css">
+  <link rel="stylesheet" href="http://localhost:4000/css/flag-icon.css">
   <link rel="canonical" href="http://localhost:4000/">
 <link rel="shortcut icon" type ="image/x-icon" href="http://localhost:4000/images/icon.png">
 
@@ -33,7 +34,7 @@
 function initialize()
 {
 var mapProp = {
-  center: new google.maps.LatLng( 41.25734862831473, -72.98990529418438 ),
+  center: new google.maps.LatLng( 51.99145374035248, 4.3824941063469 ),
   zoom: 5,
   scrollwheel: false,
     mapTypeControl: false,
@@ -434,11 +435,11 @@ styles:[
 var map=new google.maps.Map(document.getElementById("googleMaps")
   ,mapProp);
 var marker = new google.maps.Marker({
-    position: new google.maps.LatLng(41.25734862831473, -72.98990529418438 ),
+    position: new google.maps.LatLng(51.99145374035248, 4.3824941063469 ),
     map: map,
     icon: mymarker,
 //    animation: google.maps.Animation.DROP,
-    title: "Microbial Sciences Institute - Yale West Campus"
+    title: "Faculty of Applied Sciences - TU Delft"
 });
 }
 
@@ -451,6 +452,9 @@ google.maps.event.addDomListener(window, 'load', initialize);
 <!--- altmetric ---->
 <script type='text/javascript' src='https://d1bxh8uas1mnw7.cloudfront.net/assets/embed.js'></script>
 
+<!--- NEW FOR ICONS! --->
+<script src="https://kit.fontawesome.com/b192b7b723.js" crossorigin="anonymous"></script>
+  
 <!---    <base target="_blank"> --->
 
 </head>
@@ -467,14 +471,15 @@ google.maps.event.addDomListener(window, 'load', initialize);
 		<span class="icon-bar"></span>
 		<span class="icon-bar"></span>
 	  </button>
-	
-   <a class="navbar-brand" href="http://localhost:4000/"> Ђорђе Бајић &nbsp&nbsp / &nbsp&nbsp Đorđe Bajić &nbsp&nbsp/ &nbsp&nbsp Yale University </a>
+   
+   <a class="navbar-brand" href="http://localhost:4000/">  &nbsp&nbsp Metabolism of Microbial Communities &nbsp&nbsp @ &nbsp&nbsp <span style="font-family:Arial; font-weight: bold;">T</span><span style="font-family:Arial; color: #00A6D6; font-weight: bold;">U</span><span style="font-family:Arial;">Delft</span>
 	</div>
 	<div class="collapse navbar-collapse" id="navbar-collapse-1">
 	  <ul class="nav navbar-nav navbar-right">
 		<li><a href="http://localhost:4000/">Home</a></li>
 		<li><a href="http://localhost:4000/research">Research</a></li>
 		<li><a href="http://localhost:4000/publications">Publications</a></li>
+   		<li><a href="http://localhost:4000/team">Team</a></li>
 		<li><a href="http://localhost:4000/contact">Contact</a></li>
 	  </ul>
 	</div>
@@ -489,43 +494,25 @@ google.maps.event.addDomListener(window, 'load', initialize);
           <div id="homeid" class="col-sm-8">
         <!-- <h2>Djordje Bajić</h2> -->
 <div style="text-align: justify">
-	<figure align="center">
-  <p><img src="http://localhost:4000/images/djordje.jpeg" style="width: 635px" /></p>
+	<p><strong>Welcome!</strong></p>
+
+<p>We are a new group at the Section of <a href="https://www.tudelft.nl/tnw/over-faculteit/afdelingen/biotechnology/research-sections/industrial-microbiology">Industrial Microbiology</a>, within the Department of Biotechnology at TU Delft.</p>
+
+<figure align="center">
+  <p><img src="http://localhost:4000/images/home_visual.png" style="width: 635px" /></p>
 </figure>
 
-<p>I am currently a postdoctoral scientist at the Microbial Sciences Institute and the Department
-of Ecology and Evolution at Yale University. I am broadly interested in understanding <strong>how structure 
-gives rise to function in biology</strong>. For example, how the genes in a genome combine to determine a 
-trait (genotype-phenotype maps), or how the species composition of a community result in, say, the 
-consumption of a given nutrient.</p>
+<p>The word metabolism means <em>change</em>. Our group is interested in microbial metabolism in that broader sense: the change elicited by microbes on themselves, on each other, and on the environment. These processes of change are critical to understand microbial communities, but also to develop new strategies to engineer their composition and function.</p>
 
-<p>Currently, my main focus is on understanding how the structure of microbial <strong>metabolic networks</strong> 
-(the reactions encoded in a genome) shapes and constrains the evolution of metabolic traits such as growth 
-rates or metabolic secretions. This question is fascinating from the evolutionary, but also the ecological 
-standpoint, because metabolic traits govern microbial resource use and sharing, and are therefore 
-critical for their ecological interactions.</p>
+<p>In our work, we combine computer simulations, theory and laboratory experiments. We borrow concepts and approaches from different disciplines such as evolutionary biology, ecology, biochemistry or systems biology.</p>
 
-<p>To explore these questions, I combine <strong>evolutionary theory</strong>, <strong>metabolic modeling</strong> and 
-microbiological <strong>experiments</strong>. This interdisciplinary approach is aimed at understanding both 
-the physiological mechanisms linking metabolic genotypes to phenotypes, and the ecological 
-and evolutionary forces ultimately shaping these mechanisms. If you want to know more about my 
-work, check out my <a href="https://djbajic.github.io/research/">current research projects</a> 
-and some <a href="https://djbajic.github.io/publications/">finished pieces</a>.</p>
+<p>To learn more about our work, check out our <a href="https://djbajic.github.io/research/">research page</a> and some <a href="https://djbajic.github.io/publications/">finished pieces</a>.</p>
 
-<p>I was born in Belgrade, then the capital of Yugoslavia and today of Serbia. As a child, I emigrated 
-with my family to Madrid, Spain, where I grew up. In 2016, I moved to New Haven, 
-Connecticut to join <a href="http://sanchezlaboratory.com/">Alvaro Sanchez’s lab</a> at Yale</p>
+<hr />
 
-<p><a target="_blank" href="http://localhost:4000/images/djordje_cv.pdf">
-<i class="fa fa-file-pdf-o"></i>  Download my CV </a></p>
+<p><strong>Vacancies</strong></p>
 
-<p>
-<a target="_blank" href="http://scholar.google.com/citations?user=6tfrMqYAAAAJ" class="waves-effect waves-teal btn-flat my-google-scholar-link"><i class="ai ai-google-scholar"></i></a> -
-<a target="_blank" href="https://twitter.com/metaboli3am" class="waves-effect waves-teal btn-flat my-twitter-link"><i class="fa fa-twitter"></i></a> -
-<a target="_blank" href="http://www.researchgate.net/profile/Djordje-Bajic" class="waves-effect waves-teal btn-flat my-researchgate-link"><i class="ai ai-researchgate"></i> </a> -
-<a target="_blank" href="http://orcid.org/0000-0002-6716-7898" class="waves-effect waves-teal btn-flat my-orcid-link"><i class="ai ai-orcid"></i></a> -
-<a target="_blank" href="http://www.linkedin.com/pub/djordje-bajić-6591a217" class="waves-effect waves-teal btn-flat my-linkedin-link"><i class="fa fa-linkedin"></i></a>
-</p>
+<p>We currently have openings for <strong>two fully funded PhD positions</strong>. Interested students should send their applications to <a href="mailto:PhD-IMB@tudelft.nl">PhD-IMB at tudelft.nl</a>. Please explain why you are interested in pursuing a PhD, why our laboratory may be a good fit, and tell us a little bit about your background.</p>
 
 <p><br /><br /></p>
 
@@ -538,23 +525,23 @@ Connecticut to join <a href="http://sanchezlaboratory.com/">Alvaro Sanchez’s l
 <h4>News</h4>
 
 
-<b>Upcoming:</b> May 30 - June 3, 2022
-<p><em>I will be attending the <a target='_blank' href='https://workshops.evolbio.mpg.de/event/43/'>Evolutionary Dynamics and Processes</a> meeting at the Max Planck Institute for Evolutionary Biology in Plon, Germany</em></p>
+<b>Upcoming</b>: February 15, 2023
+<p><em>I will give a talk at the Symposium on Evolution in Communities jointly organized by the BioSB and NLSEB in Amsterdam.</em></p>
 
-September 17, 2021
-<p><em>Review on gut microbiota metabolites in autism out in <a target='_blank' href='https://www.mdpi.com/1422-0067/22/18/10052'>International Journal of Molecular Sciences</a>.</em></p>
+November 15, 2022
+<p><em>I started a <b>new position as Assistant Professor</b> at the Technical University in Delft. Excited to move to the Netherlands and join the Dept. of Biotechnology @ TU Delft!</em></p>
 
-August 20, 2019
-<p><em>Short perspective on the macroevolutionary consequences of niche construction in microbial metabolism published in <a target='_blank' href='https://www.frontiersin.org/articles/10.3389/fmicb.2021.718082/abstract'>Frontiers in Microbiology</a>.</em></p>
+October 11, 2022
+<p><em>I just gave a talk at the Biological Research Center of the Hungarian Academy of Sciences in Szeged, Hungary. Happy to catch up with old friends and set up new collabs!</em></p>
 
-June 14-16, 2021
-<p><em>Giving a talk at the <a target='_blank' href='https://www.embl.de/training/events/2021/PEV21-01/programme/index.html'>EMBO Workshop on Predicting Evolution</a>.</em></p>
+October 7, 2022
+<p><em>New preprint where we use toy fitness landscapes to better understand the emergence of <a target='_blank' href='https://arxiv.org/abs/2210.03677'>global epistasis</a>.</em></p>
 
-April 19-20, 2021
-<p><em>Attending the <a target='_blank' href='http://nlseb.nl/nlseb2021-nlseb-phd-postdoc-meeting/'>Meeting of the Netherlands Society for Evolutionary Biology (NLSEB)</a>.</em></p>
+June 30 - July 2, 2022
+<p><em>I will be attending the <a target='_blank' href='https://www.femsbelgrade2022.org/'>FEMS Conference on Microbiology</a> in Belgrade, Serbia.</em></p>
 
-March 8, 2021
-<p><em>Paper studying the effect of complex ecological interactions on industrial ethanol fermentations out in <a target='_blank' href=''> Nature Communications </a>.</em></p>
+June 28, 2022
+<p><em>New preprint perspective piece where we discuss the concept of the <a target='_blank' href='https://ecoevorxiv.org/repository/view/3721/'>structure-function landscape of microbial consortia</a>.</em></p>
 
 
 <h4><a href="http://localhost:4000/allnews.html">... see all News</a></h4>
