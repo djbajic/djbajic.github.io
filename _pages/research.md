@@ -65,7 +65,7 @@ We develop state of the art computational tools to simulate microbial communitie
 
 ---
 
-![]({{ site.url }}{{ site.baseurl }}/images/pubpic/electrosynth.png){: style="width: 400px; float: right; margin: 0px  10px"}
+![]({{ site.url }}{{ site.baseurl }}/images/pubpic/electrosynth.png){: style="width: 300px; float: right; margin: 0px  10px"}
 **e-COMM: Understanding and engineering electrosynthetic communities**
 As part of the [Zero Emission Biotechnology Program](https://www.tudelft.nl/tnw/over-faculteit/afdelingen/biotechnology/zero-emission-biotechnology-program) at TU Delft, we are steering our expertise to study biofilm microbial communities transforming green electricity and CO2 to valuable products. This project is a collaboration with the groups of [Ludovic Jourdin](https://www.tudelft.nl/tnw/over-faculteit/afdelingen/biotechnology/research-sections/bioprocess-engineering/ludovic-jourdin-group) and [Jean-Marc Daran](https://www.tudelft.nl/tnw/over-faculteit/afdelingen/biotechnology/research-sections/industrial-microbiology/jean-marc-daran-group) in our department.
 
@@ -73,6 +73,8 @@ As part of the [Zero Emission Biotechnology Program](https://www.tudelft.nl/tnw/
 <br/><br/>
 <br/><br/>
 <br/><br/>
+<p style="text-align: right">&copy; Image courtesy of Marika Zegers. </p>
+
 <br/><br/>
 
 
