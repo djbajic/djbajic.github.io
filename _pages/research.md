@@ -24,9 +24,9 @@ Traits such as growth or metabolite exchange rates govern how microbes use and s
 
 One of the main goals of our group is to understand the evolution of quantitative metabolic traits and their mapping onto genotypes. This will help us predict what genomic features determine the successful establishment of a microbe in a community, paving the way to predicting the assembly of microbiomes and their response to environmental changes.
 
-[[Science, 2018](https://www.science.org/doi/abs/10.1126/science.aat1168)]
-[[Cell Systems, 2022](https://www.sciencedirect.com/science/article/pii/S2405471221003793)]
-[[Preprint, 2022](https://www.biorxiv.org/content/10.1101/2022.05.20.492860v2)]
+[[Science 2018](https://www.science.org/doi/abs/10.1126/science.aat1168)]
+[[Cell Systems 2022](https://www.sciencedirect.com/science/article/pii/S2405471221003793)]
+[[bioRxiv 2022](https://www.biorxiv.org/content/10.1101/2022.05.20.492860v2)]
 
 <br/><br/>
 
@@ -41,9 +41,9 @@ To accomplish this task, we recently extended the theory of fitness landscapes t
 
 [[Plos Biology, 2019](https://journals.plos.org/plosbiology/article?id=10.1371/journal.pbio.3000550)]
 [[Nature Communications, 2021](https://www.nature.com/articles/s41467-021-21844-7)]
-[[Preprint, 2022](https://www.biorxiv.org/content/10.1101/2022.06.21.496987v1)]
-[[Preprint Review, 2022](https://ecoevorxiv.org/repository/view/3721/)]
-[[Preprint, 2022](https://arxiv.org/abs/2210.03677)]
+[[bioRxiv, 2022](https://www.biorxiv.org/content/10.1101/2022.06.21.496987v1)]
+[[bioRxiv, 2022](https://ecoevorxiv.org/repository/view/3721/)]
+[[arXiv, 2022](https://arxiv.org/abs/2210.03677)]
 
 <br/><br/>
 
@@ -90,8 +90,8 @@ For these projects, our approach is to use  metabolic models, which are a great 
 
 <br/><br/>
 
-[[Current Opinion in Biotechnology, 2021](https://www.sciencedirect.com/science/article/pii/S0958166919300722)]
-[[Frontiers in Microbiology](https://www.frontiersin.org/articles/10.3389/fmicb.2021.718082/full)]
+[[Current Opinion in Biotechnology 2021](https://www.sciencedirect.com/science/article/pii/S0958166919300722)]
+[[Frontiers in Microbiology 2021](https://www.frontiersin.org/articles/10.3389/fmicb.2021.718082/full)]
 
 <br/><br/>
 <br/><br/>
