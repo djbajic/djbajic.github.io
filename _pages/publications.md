@@ -31,9 +31,9 @@ For a full list see [below](#full-list) or go to
 <div class="col-sm-6 clearfix">
  <div class="well">
   <pubtit>{{ publi.title }}</pubtit>
-  <img src="{{ site.url }}{{ site.baseurl }}/images/pubpic/{{ publi.image }}" class="img-responsive" width="33%" style="float: left" />
-  <p align = "justify"><em>{{ publi.description }}</em></p>
-  <p>{{ publi.authors }}<br /><strong><a target="_blank" href="http://doi.org/{{ publi.doi }}">{{ publi.journalshort }}. {{publi.reference}}. {{publi.year}}</a> </strong></p>
+  <img src="{{ site.url }}{{ site.baseurl }}/images/pubpic/{{ publi.image }}" class="img-responsive" width="43%" style="float: left" />
+  <p>{{ publi.description }}</p>
+  <p><em>{{ publi.authors }}</em><br /><strong><a target="_blank" href="http://doi.org/{{ publi.doi }}">{{ publi.journalshort }}. {{publi.reference}}. {{publi.year}}</a> </strong></p>
   {% if publi.news %}<p><strong><em>News:</em></strong> {{ publi.news }}</p>{% endif %}
 <!-- <div data-badge-popover="right" data-badge-type="bar" data-doi="{{ publi.doi }}" data-hide-no-mentions="true" class="altmetric-embed"></div> -->
  </div>
@@ -101,7 +101,7 @@ For a full list see [below](#full-list) or go to
 
   [{{ number_pub }}] {{ publi.authors }}<br />
   <em><a target="_blank" href="http://doi.org/{{ publi.doi }}">{{ publi.title }}</a></em><br />
-  {{ publi.journal }}, {{publi.reference}}. {{publi.year}}<br>
+  {{ publi.year }}\. <strong>{{publi.journal}}</strong>. {{publi.reference}}<br>
   {% if publi.arxiv %}<a style="display:inline;"  target="_blank" href="https://arxiv.org/abs/{{ publi.arxiv }}" ><i class="ai ai-arxiv"></i> arXiv</a> - {% endif %}{% if publi.biorxiv %}<a style="display:inline;"  target="_blank" href="https://www.biorxiv.org/content/{{ publi.biorxiv }}" ><i class="ai ai-biorxiv"></i> bioRxiv</a> - {% endif %}<a style="display:inline;"  target="_blank" href="https://www.researchgate.net/search.Search.html?type=doi&query={{ publi.doi }}" ><i class="ai ai-researchgate"></i></a>{% if publi.mendeley %} - <a style="display:inline;"  target="_blank" href="https://www.mendeley.com/{{ publi.mendeley }}" ><i class="ai ai-mendeley"></i></a>{% endif %}{% if publi.pmid %} - <a style="display:inline;"  target="_blank" href="https://www.ncbi.nlm.nih.gov/pubmed/{{ publi.pmid }}" ><i class="ai ai-pubmed"></i></a> {% endif %} - <span style="display:inline;" class="__dimensions_badge_embed__" data-doi="{{ publi.doi }}" data-style="small_rectangle"></span><script async src="https://badge.dimensions.ai/badge.js" charset="utf-8"></script>
 
 

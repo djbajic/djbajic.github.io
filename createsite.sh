@@ -1,5 +1,4 @@
 # serve
-cp ~/Dropbox/cv/bajic_cv.pdf ./images/
 
 if [ "$1" == "-s" ]; then
 

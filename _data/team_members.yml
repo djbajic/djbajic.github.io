@@ -1,13 +1,11 @@
 - name: Djordje Bajić
   photo: djordje_cropped.jpg
-  country: srb
-  info: Assistant Professor, started November 2022
-  email: D.Bajic@tudelft.nl
+  info: Assistant Professor
   number_educ: 3
   education3: Postdoc with <a href="https://sanchezlab.weebly.com/">Alvaro Sánchez</a>, <a href="https://eeb.yale.edu/">Dept. of Ecology & Evolution</a>, Yale University, New Haven, CT, USA
   education2: Ph.D. in Biophysics with  <a href="">Juan Poyatos</a>, <a href="http://www.cnb.csic.es/index.php/en/">Centro Nacional de Biotecnología CSIC</a>, Madrid, Spain
   education1: B.Sc. in Biochemistry and M.Sc. in Biophysics, Universidad Autónoma de Madrid, Madrid, Spain
-  description: I am broadly interested in understanding how structure gives rise to function in biological systems. For example, how the genes in a genome combine to determine a trait (genotype-phenotype maps), or how the species within a community collectively contribute to a function (for example, degradation of a compound). I like to think in terms of general principles, which allow us to make predictions and come up with engineering strategies.   
+  description: Djordje is broadly interested in understanding how structure gives rise to function in biological systems. For example, how the genes in a genome combine to determine a trait (genotype-phenotype maps), or how the species within a community collectively contribute to a function (for example, degradation of a compound). I like to think in terms of general principles, which allow us to make predictions and come up with engineering strategies.   
   twitterusername: metaboli3am
   githubusername:  djbajic
   scholarusername: "6tfrMqYAAAAJ"
@@ -15,4 +13,79 @@
   orcidusername: "0000-0002-6716-7898"
   cv: "CV_Djordje_Bajic.pdf"
   past: 0
+
+
+- name: Minke Gabriëls
+  photo: minke.webp
+  info: PhD Candidate 
+  number_educ: 2
+  education2: M.Sc. Life Sciences, TU Delft, The Netherlands
+  education1: B.Sc. Life Science and Technology, TU Delft, The Netherlands
+  description: Minke is interested in engineering the function of microbial communities. She combines different computational approaches, such as genome-scale metabolic modeling or fitness landscape analysis. She tackles both fundamental and applied questions. A major focus of her work is understanding and engineering electrosynthetic biofilm communities (CO2 + electricity to product).    
+  past: 0
+
+
+- name: Uroš Gojković
+  photo: uros.jpeg
+  info: PhD Candidate 
+  number_educ: 2
+  education2: M.Sc. Life Sciences, University of Belgrade, Serbia
+  education1: B.Sc. Life Science, University of Belgrade, Serbia
+  description: Uroš is interested in understanding how we can rationally steer microbial community composition using metabolic intervention. His work is based on quantitatively characterizing model communities assembled both in high-throughput and in bioreactor settings. In his project, he is using the UNLOCK facility. 
+  past: 0
+
+- name: Stijn Poppe
+  photo: stijn.jpeg
+  info: Master End Project 
+  number_educ: 1
+  education1: B.Sc. Life Science and Technology, TU Delft, The Netherlands
+  description: Stijn is interested in understanding how the composition of top-down assembled microbial communities depends on the metabolic composition of the environment. For this, he uses a combination of modeling and high-throughput experiments.
+  past: 0
+
+- name: Marco van Oort
+  photo: marco.jpeg
+  info: Master End Project 
+  number_educ: 1
+  education1: B.Sc. Life Science and Technology, TU Delft, The Netherlands
+  description: Marco is interested in understanding how microbes innovate, and how this depends on metabolic structure and ecology. He is also building model *in silico* microbial communities using COMETS.
+  past: 0
+
+- name: Vladimir Koselka
+  photo: vladimir.jpeg
+  info: Master End Project 
+  number_educ: 1
+  education1: B.Sc. Life Science and Technology, TU Delft, The Netherlands
+  description: Vladimir is interested in how microbial resource allocation and thermodynamics structures microbial communities. His work focuses mostly on electrosynthetic communities. 
+  past: 0
+
+
+
+
+- name: Fea Tromp
+  info: Bachelor End Project, Fall 2024
+  past: 1
+
+- name: Eloïse Moniot
+  info: Erasmus Exchange Student, Spring 2024
+  past: 1
+
+- name: Floris Klein Obbink
+  info: Master End Project, Feb - Oct 2024
+  past: 1
+
+- name: Isa van Staalduinen
+  info: Bachelor End Project, Spring 2024
+  past: 1
+
+- name: Suzanne van Melzen
+  info: Bachelor End Project, Spring 2024
+  past: 1
+
+- name: Daan Nolde
+  info: Bachelor End Project, Spring 2023
+  past: 1
+
+- name: Julia Verbeek
+  info: Bachelor End Project (Spring 2023)
+  past: 1
  

@@ -1,50 +1,430 @@
 
-- title: "Development of new tools genome-scale metabolic modeling of eco-evolutionary processes"
-  description: Constraint-based metabolic modeling has emerged as one of the most effective tools for predicting metabolic 
-               traits from genomes. This offers the unique possibility of exploring empirically calibrated fitness landscapes 
-               on a large scale. Working as part of a large collaboration with the laboratories of
-               Daniel Segre,
-               Will Harcombe
-               and Kiril Korolev,
-               I have helped develop COMETS, a state of the art package for the "Computation of microbial ecosystems in time and space" [<a target="_blank" href="">Nature Protocols 2021</a>].
-               I am currently using COMETS in several of the projects outlined below.
 
-- title: "Mechanisms of global epistasis in metabolism"
+- title: Global epistasis and the emergence of function in microbial consortia
+  authors: Diaz-Colunga, J\*; A. Skwara\*, K., J.C.C. Vila, D. Bajić\#, A. Sanchez\#
+  journal: Cell
+  journalshort: Cell 
+  reference: 187(12)\:3108-3119\.e30
+  year: 2024
+  doi: 10.1016/j.cell.2024.04.016
+  arxiv:
+  biorxiv: 
+  news: 
   description: 
-
-- title: "The evolution of metabolic strategies in microbes"
-  description: Metabolic strategies, such as the decision to assimilate two substrates simultaneously versus
-               sequentially (this latter known as diauxie) can play a key role in structuring microbial communities. In a
-               collaboration with Sotaro Takano (AIST, Japan), we are currently trying to understand how does the structure of metabolic
-               networks determine such strategies (see this Perspective in [<a target="_blank" href="https://www.sciencedirect.com/science/article/pii/S0958166919300722">Current Opinion in Biotechnology 2021</a>].
-
-- title: "Macroevolutionary dynamics and innovation in microbial metabolism"
-  description: Understanding the origin of metabolic diversity requires understanding how macroevolutionary
-               processes, such as innovation and diversification, play out in the microbial world. We
-               recently laid out several exciting future directions in this field in a Perspectives paper
-               [<a target="_blank" href="https://www.frontiersin.org/articles/10.3389/fmicb.2021.718082/abstract">Frontiers in Microbiology 2021</a>].
-               Currently, we are collaborating with Maria Rebolleda-Gomez 
-               to explore the dynamics of microbial metabolic innovation using COMETS."
+  image: global_ep_summ.png
+  mendeley: 
+  researchgate: 
+  pmid: 
+  preprint: 0
+  highlight: 1
 
 
-- title: "Ecological structure-function landscapes"
-  description: Fitness landscapes (and more generally genotype-phenotype maps) are essentially an abstract device that 
-               can be used to represent how the function of any system arises from the interaction between its components. 
-               Applying this logic, I recently studied the “structure-function landscape’ of amylolytic microbial consortia
-               composed of combinations of six Bacilli speces [<a target="_blank" href="https://journals.plos.org/plosbiology/article?id=10.1371/journal.pbio.3000550">PLoS Biology 2019</a>].
-               Our approach allowed us to identify ecological interactions between species, which are analogous to epistatic 
-               interactions on a fitness landscape. Furthermore, combining this approach with the theory of biochemical kinetics
-               allowed us to mechanistically explain these interactions. 
+- title: Metabolic similarity and the predictability of microbial community assembly
+  authors: Vila, J.C.C.;, J. Goldford, S. Estrela, D. Bajic, A. Sanchez-Gorostiaga, A. Damian-Serrano, N. Lu, R. Marsland III, M. Rebolleda-Gomez, P. Mehta, A. Sanchez
+  journal: bioRxiv
+  journalshort: 
+  reference: 10.1101/2023.10.25.564019 
+  year: 2024
+  doi: 10.1101/2023.10.25.564019
+  arxiv:
+  biorxiv: 
+  news: 
+  description: 
+  image: 
+  mendeley: 
+  researchgate: 
+  pmid: 
+  preprint: 0
+  highlight: 0
 
 
-               Subsequently, in collaboration with Felipe Lino and Morten Sommmer (DTU, Denmark), we also combined this framework with COMETS 
-               to disentangle how complex ecological interactions affect biofuel production in sugar-cane fermenters 
-               [<a target="_blank" href="https://www.nature.com/articles/s41467-021-21844-7">Nature Communications 2021</a>].
-               This helped us identify a new potential "industrial probiotic", which proved the usefulness of our theory in more 
-               applied settings.   
+- title: The architecture of metabolic networks constrains the evolution of microbial resource hierarchies
+  authors: Takano, S\#;, J.C.C. Vila, R. Miyazaki, Á. Sánchez, D. Bajić\#
+  journal: Molecular Biology and Evolution
+  journalshort: Mol. Biol. Evol.
+  reference: 40(9):msad187
+  year: 2023
+  doi: 10.1093/molbev/msad187
+  arxiv:
+  biorxiv: 
+  news: 
+  description: 
+  image: 
+  mendeley: 
+  researchgate: 
+  pmid: 
+  preprint: 0
+  highlight: 0
 
 
-               Currently, we are following up on these studies by investigating whether known properties of fitness landscapes 
-               can translate to ecological structure function landscapes, helping us design robust synthetic consortia with 
-               a specific function.   
+- title: A structured evaluation of genome-scale constraint-based modeling tools for microbial consortia
+  authors: Scott Jr, W.T; S. Benito-Vaquerizo, J. Zimmermann, D. Bajić, A. Heinken, M. Suarez-Diez, P.J. Schaap
+  journal: PLoS Computational Biology
+  journalshort: PLoS Comp. Bio.
+  reference: 19(8):e1011363
+  year: 2023
+  doi: 10.1371/journal.pcbi.1011363
+  arxiv:
+  biorxiv: 
+  news: 
+  description: 
+  image: 
+  mendeley: 
+  researchgate: 
+  pmid: 
+  preprint: 0
+  highlight: 0
 
+
+- title: Emergent coexistence in multispecies microbial communities
+  authors: Chang, C-Y.\#; D. Bajić\#, J.C.C. Vila, S. Estrela, A. Sanchez\#
+  journal: Science
+  journalshort: Science
+  reference: 381 (6655), 343-348
+  year: 2023
+  doi: 10.1126/science.adg0727
+  arxiv:
+  biorxiv: 
+  news: 
+  description: 
+  image: 
+  mendeley: 
+  researchgate: 
+  pmid: 
+  preprint: 0
+  highlight: 0
+
+
+- title: Global epistasis on fitness landscapes
+  authors: Diaz-Colunga, J\*; A. Skwara\*, K. Gowda, R. Diaz-UriarteJ.C.C. Vila, M. Tikhonov, D. Bajić\#, A. Sanchez\#
+  journal: Philosophical Transactions of the Royal Society B
+  journalshort: Phil. Trans. R. Soc. B
+  reference: 378(1877):20220053
+  doi: 10.1098/rstb.2022.0053
+  year: 2023
+  arxiv:
+  biorxiv: 
+  news: 
+  description: 
+  image: 
+  mendeley: 
+  researchgate: 
+  pmid: 
+  preprint: 0
+  highlight: 0
+
+
+- title: The community-function landscape of microbial consortia
+  authors: Sanchez, A.; D. Bajić, J. Diaz-Colunga, A. Skwara, J.C.C. Vila, S. Kuehn
+  journal: Cell Systems
+  journalshort: Cell Systems 
+  reference: 14(1)\:122-134
+  year: 2023
+  doi: 10.1016/j.cels.2022.12.011
+  arxiv: 
+  biorxiv: 
+  news: 
+  description: 
+  image: 
+  mendeley: 
+  researchgate: 
+  pmid: 
+  preprint: 0
+  highlight: 0
+
+
+- title: Functional attractors in microbial community assembly
+  authors: Estrela, S.\*\#; J.C.C. Vila, N. Lu, D. Bajić, M. Rebolleda-Gomez, C-Y. Chang, A. Sánchez \#,
+  journal: Cell Systems 
+  journalshort: Cell Systems
+  reference: 13(1):29-42
+  year: 2022
+  doi: 10.1016/j.cels.2021.09.011
+  arxiv:
+  biorxiv: https://www.biorxiv.org/content/10.1101/2020.03.09.984278v1
+  news: 
+  description: This work dissects how quantitative patterns of convergence and variation observed in microbial community assembly depend on quantitative metabolic traits and the inherent stochasticity of population dynamics.
+  image: attractors.png
+  mendeley: 
+  researchgate: 
+  pmid: 
+  preprint: 0
+  highlight: 0
+
+
+- title: A metabolic modeling platform for the computation of microbial ecosystems in time and space (COMETS)
+  authors: Dukovski\*, I; D. Bajić\*,J.M. Chacon\*, M. Quintin\*, J.C.C. Vila, S. Sulheim, A.R. Pacheco, D.B.Bernstein, W.J. Riehl, K.S. Korolev, A. Sánchez, W.R. Harcombe, D. Segrè
+  journal: Nature Protocols
+  journalshort: Nature Protocols
+  reference: 16:5030–5082
+  year: 2021
+  doi: 10.1038/s41596-021-00593-3
+  arxiv: https://arxiv.org/abs/2009.01734
+  biorxiv: 
+  news: 
+  description: A state-of-the-art platform for genome-scale metabolic modeling of multi-species communities.
+  image: comets_code.png
+  mendeley: 
+  researchgate: 
+  pmid: 
+  preprint: 0
+  highlight: 1
+
+
+- title: Tolerance to NADH/NAD+ imbalance anticipates aging and anti-aging interventions
+  authors: Alonso-Lavin A.J; D. Bajić, J.F. Poyatos #
+  journal: iScience
+  journalshort: iScience
+  reference: 102697
+  year: 2021
+  doi: 10.1016/j.isci.2021.102697
+  arxiv:
+  biorxiv: 
+  news: 
+  description: 
+  image: dummy.png
+  pmid: 34195572
+  preprint: 0
+  highlight: 0
+
+
+- title: The macroevolutionary consequences of niche construction in microbial metabolism
+  authors: Bajić D \#; M. Rebolleda-Gomez, M.M. Muñoz, A. Sánchez \# 
+  journal: Frontiers in Microbiology 
+  journalshort: Frontiers in Microbiology 
+  reference: 
+  year: 2021
+  doi: 10.3389/fmicb.2021.718082 
+  arxiv:
+  biorxiv: 
+  news: 
+  description: 
+  image: dummy.png
+  mendeley: 
+  researchgate: 
+  pmid: 
+  preprint: 0
+  highlight: 0
+
+
+- title: Complex yeast--bacteria interactions affect the yield of industrial ethanol fermentation
+  authors: de Oliveira Lino, F.S.; D. Bajić, J.C.C. Vila, A. Sánchez, M.O.A. Sommer
+  journal: Nature communications
+  journalshort: Nature Communications
+  reference: "12(1):1-12"
+  year: 2021
+  doi: 10.1038/s41467-021-21844-7
+  arxiv:
+  biorxiv: 
+  news: 
+  description: 
+  image: dummy.png
+  mendeley: 
+  researchgate: 
+  pmid: 33686084
+  preprint: 0
+  highlight: 0
+
+
+- title: The Impact of Gut Microbiota-Derived Metabolites in Autism Spectrum Disorders
+  authors: Peralta-Marzal L.N.\#; N. Prince, D. Bajić, L. Roussin, L. Naudon, S. Rabot, J. Garssen,  A.D. Kraneveld, P. Pérez-Pardo \#
+  journal: International Journal of Molecular Sciences 
+  journalshort: International Journal of Molecular Sciences 
+  reference: "22(18):10052"
+  year: 2021
+  doi: 10.3390/ijms221810052
+  arxiv:
+  biorxiv: 
+  news: 
+  description: 
+  image: dummy.png
+  pmid: 34576216
+  preprint: 0
+  highlight: 0
+
+
+- title: Suboptimal global transcriptional response increases the harmful effects of loss-of-function mutations
+  authors: Kovács\*, K.; Z. Farkas\*, D. Bajić\*, D. Kalapis, A. Daraba, K. Almási, B. Kintses, Z. Bódi, R. Notebaart, J.F. Poyatos, P. Kemmeren, F.C.P. Holstege, C. Pál, B. Papp, 
+  journal: Molecular Biology and Evolution
+  journalshort: Molecular Biology and Evolution
+  reference: "38(3):1137--1150" 
+  year: 2020
+  doi: 10.1093/molbev/msaa280
+  arxiv:
+  biorxiv: 
+  news: 
+  description: "We discovered that harmful effects on gene knock-outs often result from their effect on the expression of other genes, by modifying global expression patterns. This puts into question the logic behind the use of gene knock-outs for the characterization of gene function"
+  image: dummy.png
+  mendeley: 
+  researchgate: 
+  pmid: 33306797
+  preprint: 0
+  highlight: 0
+
+
+- title: The ecology and evolution of microbial metabolic strategies
+  authors: Bajić, D. and A. Sánchez
+  journal: Current Opinion in Biotechnology
+  journalshort: Current Opinion in Biotechnology
+  reference: "62:123-128"
+  year: 2020
+  doi: 10.1016/j.copbio.2019.09.003 
+  arxiv:
+  biorxiv: 
+  news: 
+  description: Here we discuss ideas about the evolution and diversity microbial metabolic strategies, their prediction from genomic data and their consequences for microbial communities.
+  image: hierarchies.jpg
+  mendeley: 
+  researchgate: 
+  pmid: 31670179
+  preprint: 0
+  highlight: 1
+
+
+- title: Artificially selecting bacterial communities using propagule strategies},
+  authors: Chang, C-Y\* and M.L. Osborne\*, D. Bajić, A. Sánchez
+  journal: Evolution
+  journalshort: Evolution
+  reference: "74(10):2392-2403"
+  year: 2020
+  doi: 10.1111/evo.14092
+  arxiv:
+  biorxiv: 
+  news: 
+  description: 
+  image: dummy.png
+  mendeley: 
+  researchgate: 
+  pmid: 32888315
+  preprint: 0
+  highlight: 0
+
+
+- title: High-order interactions distort the functional landscape of microbial consortia,
+  authors: Sánchez-Gorostiaga\*, A; D. Bajić\*, M.L. Osborne, J.F. Poyatos, and A. Sánchez   
+  journal: PLoS Biology
+  journalshort: PLoS Biology
+  reference: "17(12): e3000550"
+  year: 2019
+  doi: 10.1371/journal.pbio.3000550
+  arxiv:
+  biorxiv: 
+  news: 
+  description: "We extended the theory of fitness landscapes to characterize an ecological
+  structure-function landscape, the map between the composition and function of microbial consortia.
+  This allowed us to separate the effect of behavioral and population dynamics interactions, and
+  show that higher-order interactions critically affect our ability to predict and engineer complex ecosystem function."
+  image: starch_epsilon.png
+  pmid: 31830028
+  preprint: 0
+  highlight: 1
+
+
+- title: On the deformability of an empirical fitness landscape by microbial evolution
+  authors: D. Bajić\*\#, J.C.C. Vila\*, Z. Blount, A. Sánchez \#
+  journal: Proceedings of the National Academy of Sciences
+  journalshort: PNAS
+  reference: "115 (44): 11286--11291"
+  year: 2018
+  doi: 10.1073/pnas.1808485115
+  arxiv:
+  biorxiv: 
+  news: 
+  description: "In this work, we formally defined a new kind of ecologically mediated genetic interaction, that we called
+  “non-commutative epistasis”. We used it to quantitatively chart eco-evolutionary interactions on an empirical
+  genotype-phenotype map, showing how they can deform fitness landscapes profoundly altering long-term evolution."
+  image: deformability.png
+  mendeley: 
+  researchgate: 
+  pmid: 30322921
+  preprint: 0
+  highlight: 1
+
+
+- title: Emergent simplicity in microbial community assembly,
+  authors: Goldford\*, J.E.;  N. Lu\*, D. Bajić, S. Estrela, M. Tikhonov, A. Sánchez-Gorostiaga, D. Segrè, P. Mehta \#, A. Sánchez \#, 
+  journal: Science
+  journalshort: Science
+  reference: "361(6401):469-474"
+  year: 2018
+  doi: 10.1126/science.aat1168
+  arxiv:
+  biorxiv: 
+  news: 
+  description: "We demonstrated in a novel experimental system that function and coarse-grained taxonomy of microbial communities are
+  predictable and governed by resource availability, despite species-level variability. We also showed
+  that these features are emergent properties of the assembly of large microbial communities due to the presence of cross-feeding."
+  image: crossfeeding.png
+  pmid: 30072533
+  preprint: 0
+  highlight: 0
+
+
+- title: Deconstructing a multiple antibiotic resistance regulation through the quantification of its input function
+  authors: G. Rodrigo, D. Bajić, I. Elola, J.F. Poyatos 
+  journal: NPJ systems biology and applications
+  journalshort: NPJ systems biology and applications
+  reference: "3(1):1--9"
+  year: 2017
+  doi: 10.1038/s41540-017-0031-2
+  arxiv:
+  biorxiv: 
+  news: 
+  description: 
+  image: 
+  pmid: 29018569
+  preprint: 0
+  highlight: 0
+
+
+- title: Antagonistic autoregulation speeds up a homogeneous response in Escherichia coli
+  authors: G. Rodrigo, D. Bajić, I. Elola, J.F. Poyatos
+  journal: Scientific Reports
+  journalshort: Scientific Reports
+  reference: "6 (1): 1--10"
+  year: 2016
+  doi: 10.1038/srep36196
+  arxiv:
+  biorxiv: 
+  news: 
+  description: 
+  image: 
+  pmid: 27796341
+  preprint: 0
+  highlight: 0
+
+
+- title: Rewiring of genetic networks in response to modification of genetic background},
+  authors: Bajić, D; C. Moreno-Fenoll, J.F. Poyatos
+  journal: Genome Biology and Evolution
+  journalshort: Genome Biology and Evolution
+  reference: "6(12):3267--3280"
+  year: 2014
+  doi: 10.1093/gbe/evu255
+  arxiv:
+  biorxiv: 
+  news: 
+  description: 
+  image: 
+  pmid: 25432942
+  preprint: 0
+  highlight: 0
+
+
+- title: Balancing noise and plasticity in eukaryotic gene expression
+  authors: D. Bajić, J. Poyatos
+  journal: Proceedings of the National Academy of Sciences
+  journalshort: BMC Genomics
+  reference: "13 (1): 1--12"
+  year: 2012
+  doi: 10.1186/1471-2164-13-343
+  arxiv:
+  biorxiv: 
+  news: 
+  description: 
+  image: dummy.png
+  mendeley: 
+  researchgate: 
+  pmid: 22839658
+  preprint: 0
+  highlight: 0
