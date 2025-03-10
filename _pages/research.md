@@ -51,7 +51,6 @@ As part of the [Zero Emission Biotechnology Program](https://www.tudelft.nl/tnw/
 ![]({{ site.url }}{{ site.baseurl }}/images/pubpic/starch_epsilon.png){: style="width: 350px; float: left; margin: 0px  10px"}
 
 **Engineering microbiome function through its emergent properties**
-
 Understanding in detal how microbial species interact within communities to collectively deliver a function represents a colossal task. We collaborate with [Alvaro Sanchez](https://sanchezlaboratory.weebly.com/), [Juan Diaz-Colunga](https://jdiazc9.github.io/), and others, to take an alternative, *statistical* approach. Instead of aiming to understand first all the details, we take a shortcut and "start from the roof" by looking for emergent patterns that can help us engineer communities with a desired output, without necessarily understanding the underlying mechanisms. We also apply these methods in collaboration with researchers in different fields to help them engineer microbial communities with interesting functions, for example or those helping crops grow and resist pathogens ([Ivica Dimkić](https://bio.bg.ac.rs/zaposleni/dimkic-ivica/)) or those fermentating soymilk ([Nemanja Stanisavljević](https://imgge.bg.ac.rs/lat/nemanja-stanisavljevic) and [Nemanja Kljajević](https://imgge.bg.ac.rs/lat/nemanja-kljajevic)). 
 
 [[Cell, 2024](https://www.biorxiv.org/content/10.1101/2022.06.21.496987v1)]
@@ -93,23 +92,3 @@ We are interested in a broad range of topics in microbial ecology and evolution.
 <br/><br/>
 <br/><br/>
 <br/><br/>
-
-
-
-
-
-
-
-
-
-
-
-
----
-title: "Research"
-layout: textlay
-excerpt: "Bajić -- TU Delft -- Research"
-sitemap: false
-permalink: /research/
----
-
