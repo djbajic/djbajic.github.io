@@ -1,0 +1,126 @@
+# Friends and collaborators — shown on the People page, between the team and the alumni.
+# One block per institution. Order on the page = order here.
+# logos: files in public/img/partners/ (one or more). If a file is missing, the institution name is shown as text.
+# map: [lat, lon] position on the map (approximate; nudged apart where partners share a city).
+# people: name + url (lab, group or personal website). Leave url empty ('') to show the name without a link.
+
+# ---- Europe ----
+- institution: TU Delft
+  place: Delft, Netherlands
+  map: [52.0, 4.3]
+  logos: [tudelft.webp]
+  people:
+    - { name: Ludovic Jourdin, url: 'https://www.tudelft.nl/en/staff/l.jourdin/' }
+    - { name: Jean-Marc Daran, url: 'https://www.tudelft.nl/en/staff/j.g.daran/' }
+    - { name: Robbert Kleerebezem, url: 'https://www.tudelft.nl/en/staff/r.kleerebezem/' }
+- institution: Vrije Universiteit Amsterdam
+  place: Amsterdam, Netherlands
+  map: [52.6, 5.25]
+  logos: [vu.webp]
+  people:
+    - { name: Matti Gralka, url: 'https://sites.google.com/view/mattigralka/home' }
+    - { name: Frank Bruggeman, url: 'https://teusinkbruggemanlab.nl/' }
+- institution: Wageningen University & Research
+  place: Wageningen, Netherlands
+  map: [51.85, 6.1]
+  logos: [wur.webp]
+  people:
+    - { name: Maria Suarez-Diez, url: 'https://www.wur.nl/en/persons/profdr-m-maria-suarez-diez' }
+- institution: Holomicrobiome Institute
+  place: Amsterdam, Netherlands
+  map: [53.25, 4.5]
+  logos: [holomicrobiome.webp]
+  people:
+    - { name: Timmy Páez-Watson, url: 'https://scholar.google.com/citations?user=APTfVLEAAAAJ' }
+- institution: Universidad de Salamanca · CSIC
+  place: Salamanca, Spain
+  map: [40.96, -5.66]
+  logos: [usal.webp, csic.webp]
+  people:
+    - { name: Álvaro Sánchez, url: 'https://sanchezlaboratory.weebly.com/' }
+    - { name: José Camacho-Mateu, url: 'https://scholar.google.com/citations?user=if8d91oAAAAJ' }
+    - { name: Miguel Díez Fernández de Bobadilla, url: 'https://scholar.google.com/citations?user=71qp_-wAAAAJ' }
+- institution: IPLA-CSIC
+  place: Villaviciosa, Spain
+  map: [43.48, -5.43]
+  logos: [ipla.webp]
+  people:
+    - { name: Juan Díaz-Colunga, url: 'https://jdiazc9.github.io/' }
+- institution: Aarhus University
+  place: Aarhus, Denmark
+  map: [56.16, 10.2]
+  logos: [aarhus.webp]
+  people:
+    - { name: Jo Philips, url: 'https://corc.au.dk/corc-research/philips-group' }
+    - { name: Vladimir Koselka, url: '' }
+- institution: Biological Research Centre · Hungarian Academy of Sciences
+  place: Szeged, Hungary
+  map: [46.25, 20.15]
+  logos: [hunren-brc.webp]
+  people:
+    - { name: Viktória Lázár, url: 'https://group.szbk.u-szeged.hu/sysbiol/viktoria-lazar-lab-index.html' }
+    - { name: Bence Bognár, url: 'https://scholar.google.com/citations?user=nmsY09wAAAAJ' }
+- institution: University of Belgrade
+  place: Belgrade, Serbia
+  map: [44.82, 20.46]
+  logos: [belgrade.webp]
+  people:
+    - { name: Ivica Dimkić, url: 'https://www.researchgate.net/lab/Ivica-Dimkic-Lab-Microbial-Biotechnology-Ivica-Dimkic' }
+- institution: IMGGE, University of Belgrade
+  place: Belgrade, Serbia
+  map: [44.3, 21.15]
+  logos: [imgge.webp]
+  people:
+    - { name: Nemanja Stanisavljević, url: 'https://scholar.google.ch/citations?user=DopfkdoAAAAJ' }
+    - { name: Nemanja Kljajević, url: 'https://imgge.bg.ac.rs/en/nemanja-kljajevic-en' }
+
+# ---- China ----
+- institution: Nanjing Agricultural University
+  place: Nanjing, China
+  map: [32.04, 118.78]
+  logos: [njau.webp]
+  people:
+    - { name: Wei Zhong, url: 'http://faculty.njau.edu.cn/weizhong/en/index.htm' }
+    - { name: Alexandre Jousset, url: '' }
+- institution: Chinese Academy of Agricultural Sciences (CAAS)
+  place: Beijing, China
+  map: [39.96, 116.33]
+  logos: [caas.webp]
+  people:
+    - { name: Jun Liu, url: '' }
+- institution: Jiangnan University
+  place: Wuxi, China
+  map: [29.9, 121.9]
+  logos: [jiangnan.webp]
+  people:
+    - { name: Qun Wu, url: 'https://scholar.google.com/citations?user=s-OrvnUAAAAJ' }
+
+# ---- Brazil ----
+- institution: University of São Paulo
+  place: São Paulo & Piracicaba, Brazil
+  map: [-24.6, -45.6]
+  logos: [usp.webp]
+  people:
+    - { name: Thiago Olitta Basso, url: 'https://bv.fapesp.br/en/pesquisador/687199/thiago-olitta-basso' }
+    - { name: Diego Riaño-Pachón, url: 'https://labbces.cena.usp.br/author/diego-mauricio-riano-pachon/' }
+- institution: University of Campinas (UNICAMP)
+  place: Campinas, Brazil
+  map: [-22.2, -49.4]
+  logos: [unicamp.svg]
+  people:
+    - { name: Andreas Gombert, url: 'http://www.somos.unicamp.br/professores/view/4147' }
+- institution: Federal University of São Carlos (UFSCar)
+  place: Araras, Brazil
+  map: [-19.4, -45.4]
+  logos: [ufscar.webp]
+  people:
+    - { name: Sandra Ceccato-Antonini, url: 'https://www.ppgpvba.ufscar.br/en/about-the-program/faculty-members/prof-phd-sandra-regina-ceccato-antonini' }
+
+# ---- USA ----
+- institution: Boston University
+  place: Boston, USA
+  map: [42.35, -71.1]
+  logos: [bu.webp]
+  people:
+    - { name: Daniel Segrè, url: 'https://www.bu.edu/segrelab/' }
+    - { name: Ilija Dukovski, url: 'https://www.bu.edu/segrelab/profile/2007/' }

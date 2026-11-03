@@ -1,0 +1,24 @@
+---
+import BowtieMark from './BowtieMark.astro';
+import { nav, site } from '../data/content';
+const path = Astro.url.pathname;
+const { home = '/' } = Astro.props;
+---
+<header class="site-header" data-header>
+  <div class="wrap bar">
+    <a class="brand" href={home} aria-label={`${site.name} — home`}>
+      <BowtieMark size={22} />
+      <span class="brand-name">{site.name}</span>
+      <span class="brand-aff brand-sec">{site.section}</span>
+      <span class="brand-aff brand-tud" aria-label="TU Delft"><b>T<span class="u">U</span></b> Delft</span>
+    </a>
+    <nav class="nav" aria-label="Main">
+      {nav.map((n) => <a href={n.href} aria-current={path.startsWith(n.href) ? 'page' : undefined}>{n.label}</a>)}
+    </nav>
+  </div>
+</header>
+<script>
+  const h = document.querySelector('[data-header]');
+  const on = () => h?.classList.toggle('scrolled', window.scrollY > 8);
+  on(); window.addEventListener('scroll', on, { passive: true });
+</script>

@@ -1,0 +1,40 @@
+---
+// Stylized metabolic network: grey reactions, one highlighted route from a substrate to biomass.
+const { hl = 'var(--c-cyan)', id = 'net', animate = false } = Astro.props;
+const P: Record<string, [number, number]> = {
+  s1: [20, 40], s2: [20, 200], s3: [20, 330],
+  a: [90, 40], b: [90, 120], c: [90, 200], d: [90, 270], e: [90, 330],
+  f: [170, 80], g: [170, 160], h: [170, 240], i: [170, 310],
+  core1: [250, 160], core2: [250, 230],
+  j: [330, 90], k: [330, 160], l: [330, 230], m: [330, 300],
+  n: [410, 60], o: [410, 140], p: [410, 220], q: [410, 300],
+  out: [480, 190],
+};
+const E: [string, string][] = [
+  ['s1','a'],['s2','c'],['s3','e'],['a','b'],['b','c'],['c','d'],['d','e'],['a','f'],['b','f'],['b','g'],['c','g'],['d','h'],['e','i'],['d','i'],
+  ['f','g'],['g','h'],['h','i'],['f','core1'],['g','core1'],['h','core2'],['i','core2'],['core1','core2'],
+  ['core1','j'],['core1','k'],['core2','l'],['core2','m'],['j','k'],['l','m'],['j','n'],['k','o'],['k','p'],['l','p'],['m','q'],['n','o'],['p','q'],
+  ['o','out'],['p','out'],['q','out'],['n','out'],
+];
+const route = ['s2','c','g','core1','k','p','out'];
+const pathD = route.map((k, i) => `${i ? 'L' : 'M'}${P[k][0]},${P[k][1]}`).join(' ');
+const onRoute = new Set(route);
+---
+<svg viewBox="0 0 500 380" class:list={['fig-net', { animate }]} id={id} role="img" aria-label="A metabolic network with one highlighted pathway converging through a shared core">
+  <g stroke="#c9ccd4" stroke-width="3" stroke-linecap="round">
+    {E.map(([u, v]) => <line x1={P[u][0]} y1={P[u][1]} x2={P[v][0]} y2={P[v][1]} />)}
+  </g>
+  <path d={pathD} fill="none" stroke={hl} stroke-width="6" stroke-linecap="round" stroke-linejoin="round" class="route" pathLength="1" />
+  {Object.entries(P).map(([k, [x, y]]) => (
+    <circle cx={x} cy={y} r={k.startsWith('core') ? 10 : 7} fill={onRoute.has(k) ? hl : '#c9ccd4'} stroke="#fff" stroke-width="2" />
+  ))}
+  <text x="20" y="372" class="fig-lbl">substrates</text>
+  <text x="250" y="262" text-anchor="middle" class="fig-lbl" dy="22">core</text>
+  <text x="498" y="222" text-anchor="end" class="fig-lbl">biomass</text>
+</svg>
+<style>
+  .fig-lbl { font: 17px var(--f-mono); fill: var(--ink-3); letter-spacing: .04em; }
+  .fig-net.animate .route { stroke-dasharray: 1; stroke-dashoffset: 1; transition: stroke-dashoffset 1.6s ease; }
+  :global(.active) .fig-net.animate .route, .fig-net.animate.on .route { stroke-dashoffset: 0; }
+  @media (prefers-reduced-motion: reduce) { .fig-net.animate .route { stroke-dashoffset: 0; } }
+</style>

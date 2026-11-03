@@ -1,0 +1,21 @@
+# Industry partners — the "Industry partners" cards on the homepage, under "Supported by".
+# map: [lat, lon] position on the People-page map.
+# logo: file in public/img/partners/ (optional; without it the name is set as text). summary: one sentence.
+- name: Unilever
+  place: Netherlands
+  url: 'https://www.unilever.com/'
+  map: [51.3, 4.45]
+  logo: unilever.svg
+  summary: We worked with Unilever on valorization of feedstocks.
+- name: Pedra Agroindustrial
+  place: Brazil
+  url: 'https://www.grupodapedra.com/'
+  map: [-20.2, -50.8]
+  logo: pedra.webp
+  summary: We are developing new approaches to deal with contaminants in bioethanol production.
+- name: Fertico
+  place: Serbia
+  url: 'https://fertico.rs/'
+  map: [45.45, 19.7]
+  logo: fertico.webp
+  summary: We are developing next-generation microbial inoculants for agriculture.

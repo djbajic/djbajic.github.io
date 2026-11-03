@@ -1,0 +1,19 @@
+# Funding — shown on the homepage ("Supported by") and in the footer.
+# logo:  file name inside public/img/funders/ (SVG, PNG, JPG or WebP).
+# label: optional text set next to the logo (use it when the logo alone doesn't name the program).
+# height: logo height in pixels on the homepage (footer uses ~40% of it). Tall logos need a larger number.
+# grant: optional small line under it, e.g. "NWO Open Competition XS · OCENW.XS.123"
+# If a logo file is missing, the name is shown as text instead, so the site never breaks.
+- name: NWO
+  full: Dutch Research Council (NWO)
+  logo: NWO logo - RGB.jpg
+  height: 120
+  url: https://www.nwo.nl/en
+  grant: ''
+- name: Zero Emission Biotechnology
+  full: Zero Emission Biotechnology Program, Department of Biotechnology, TU Delft
+  logo: tud-biotechnology.svg
+  height: 72
+  label: Zero Emission Biotechnology Program
+  url: https://www.tudelft.nl/tnw/over-faculteit/afdelingen/biotechnology/zero-emission-biotechnology-program
+  grant: ''

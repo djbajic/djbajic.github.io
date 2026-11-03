@@ -1,0 +1,19 @@
+---
+import Base from '../layouts/Base.astro';
+import { site } from '../data/content';
+---
+<Base title="Contact">
+  <section class="wrap page-head"><p class="eyebrow">Contact</p><h1>Find us</h1></section>
+  <section class="wrap cols">
+    <div><p class="eyebrow">Email</p><p class="big"><a href={`mailto:${site.email}`}>{site.email}</a></p></div>
+    <div><p class="eyebrow">Address</p><address>{site.address.map((l) => <>{l}<br /></>)}</address></div>
+    <div><p class="eyebrow">Elsewhere</p><p><a href={site.links.scholar}>Google Scholar</a><br /><a href={site.links.orcid}>ORCID</a><br /><a href={site.links.github}>GitHub</a></p></div>
+  </section>
+</Base>
+<style>
+  .cols { display: grid; grid-template-columns: 1.3fr 1fr 1fr; gap: 40px; }
+  .cols .eyebrow { margin-bottom: 8px; }
+  .big { font-family: var(--f-display); font-weight: 600; letter-spacing: -0.02em; font-size: 26px; }
+  address { font-style: normal; color: var(--ink-2); }
+  @media (max-width: 760px) { .cols { grid-template-columns: 1fr; } }
+</style>

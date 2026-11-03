@@ -1,0 +1,45 @@
+---
+import Base from '../layouts/Base.astro';
+import PubItem from '../components/PubItem.astro';
+import { pubs, themes, site } from '../data/content';
+const years = [...new Set(pubs.map((p) => p.year))].sort((a, b) => b - a);
+---
+<Base title="Publications">
+  <section class="wrap page-head">
+    <p class="eyebrow">Publications</p>
+    <h1>Papers & preprints</h1>
+    <p>Full and up-to-date list on <a href={site.links.scholar}>Google Scholar</a> and <a href={site.links.orcid}>ORCID</a>. * equal contribution, # corresponding author.</p>
+    <div class="filters" role="group" aria-label="Filter by theme">
+      <button class="f on" data-f="all">All</button>
+      {themes.map((t) => <button class="f" data-f={t.id} style={`--c:${t.color}`}><i></i>{t.label}</button>)}
+    </div>
+  </section>
+  <section class="wrap">
+    {years.map((y) => (
+      <div class="year" data-year>
+        <h2>{y}</h2>
+        <div>{pubs.filter((p) => p.year === y).map((p) => <div data-theme={p.theme}><PubItem p={p} /></div>)}</div>
+      </div>
+    ))}
+  </section>
+</Base>
+<script>
+  const btns = [...document.querySelectorAll<HTMLButtonElement>('.f')];
+  btns.forEach((b) => b.addEventListener('click', () => {
+    btns.forEach((x) => x.classList.toggle('on', x === b));
+    const f = b.dataset.f;
+    document.querySelectorAll<HTMLElement>('[data-theme]').forEach((el) => (el.hidden = f !== 'all' && el.dataset.theme !== f));
+    document.querySelectorAll<HTMLElement>('[data-year]').forEach((y) => (y.hidden = !y.querySelector('[data-theme]:not([hidden])')));
+  }));
+</script>
+<style>
+  .filters { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 28px; }
+  .f { font: inherit; font-size: 14px; background: none; border: 1px solid var(--rule-2); border-radius: 999px; padding: 6px 14px; cursor: pointer; color: var(--ink-2); display: inline-flex; gap: 8px; align-items: center; }
+  .f i { width: 8px; height: 8px; border-radius: 50%; background: var(--c); }
+  .f.on { background: var(--ink); color: #fff; border-color: var(--ink); }
+  .year { display: grid; grid-template-columns: 120px 1fr; gap: 24px; }
+  .year h2 { font-family: var(--f-display); font-weight: 600; letter-spacing: -0.03em; font-size: 30px; padding-top: 16px; position: sticky; top: 72px; align-self: start; }
+  .year :global(.pub) { display: block; }
+  .year :global(.pub-meta) { display: none; }
+  @media (max-width: 700px) { .year { grid-template-columns: 1fr; gap: 0; } .year h2 { position: static; } }
+</style>

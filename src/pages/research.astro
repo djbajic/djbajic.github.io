@@ -1,0 +1,44 @@
+---
+import Base from '../layouts/Base.astro';
+import PubItem from '../components/PubItem.astro';
+import { themes, pubsByTheme } from '../data/content';
+---
+<Base title="Research" description="Questions linking the architecture of metabolism to microbial ecology, evolution and community design.">
+  <section class="wrap page-head">
+    <p class="eyebrow">Research</p>
+    <h1>Our research program</h1>
+    <p> We aim to connect scales, from the structure of genomes and metabolic networks, to how organisms evolve, how they interact, which communities assemble, and how they collectively function. </p>
+    <nav class="toc" aria-label="Themes">
+      {themes.map((t) => <a href={`#${t.id}`} style={`--c:${t.color}`}><span>{t.n}</span>{t.label}</a>)}
+    </nav>
+  </section>
+  {themes.map((t, i) => (
+    <section class="theme wrap" id={t.id} style={`--c:${t.color}`}>
+      <div class="t-text">
+        <p class="meta"><span class="n">{t.n}</span> {t.label} <span class="sc">· {t.scale}</span></p>
+        <h2>{t.question}</h2>
+        <p class="body">{t.body}</p>
+      </div>
+      <figure class="t-fig"><img src={`/img/pub/${t.figure}`} alt={t.figAlt} loading={i ? 'lazy' : 'eager'} /></figure>
+      <div class="t-pubs">
+        <p class="eyebrow">Papers</p>
+        {pubsByTheme(t.id).map((p) => <PubItem p={p} />)}
+      </div>
+    </section>
+  ))}
+</Base>
+<style>
+  .toc { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 32px; }
+  .toc a { display: inline-flex; gap: 8px; align-items: center; text-decoration: none; border: 1px solid var(--rule-2); border-radius: 999px; padding: 6px 14px; font-size: 15px; }
+  .toc a span { font-family: var(--f-mono); font-size: 12px; color: var(--c); }
+  .toc a:hover { border-color: var(--c); }
+  .theme { display: grid; grid-template-columns: 1.1fr 1fr; gap: 24px 64px; padding-top: 72px; padding-bottom: 24px; border-top: 1px solid var(--rule); margin-top: 48px; scroll-margin-top: 64px; }
+  .meta { font-family: var(--f-mono); font-size: 13px; letter-spacing: .06em; text-transform: uppercase; }
+  .meta .n { color: var(--c); } .meta .sc { color: var(--ink-3); }
+  .theme h2 { font-family: var(--f-display); font-weight: 600; font-size: clamp(28px, 3.2vw, 40px); letter-spacing: -0.03em; line-height: 1.1; margin: 10px 0 18px; }
+  .body { color: var(--ink-2); font-size: 18px; }
+  .t-fig { margin: 0; background: var(--paper-2); border-radius: 14px; padding: 24px; display: grid; place-items: center; align-self: start; }
+  .t-fig img { max-height: 340px; width: auto; mix-blend-mode: multiply; }
+  .t-pubs { grid-column: 1 / -1; margin-top: 16px; }
+  @media (max-width: 860px) { .theme { grid-template-columns: 1fr; } }
+</style>

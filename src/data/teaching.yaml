@@ -1,0 +1,60 @@
+# Teaching — the Teaching page. Edit freely; order on the page = order here.
+intro: >-
+  We teach how to quantitatively understand biological systems using predictive models. We teach in TU Delft's Life Sciences and Technology
+  MSc program, and often organize or participate in international workshops and summer schools.
+
+# University courses (big cards)
+courses:
+  - title: Analysis of Metabolic Networks
+    short: AMN
+    where: MSc Life Science & Technology, TU Delft
+    detail: Cell Factory specialisation; elective in Biochemical Engineering
+    summary: >-
+      Mass balances and analysis of bioreactor data; constraint-based, stoichiometric, and thermodynamic analysis of metabolic pathways and networks.
+    url: 'https://studiegids.tudelft.nl/courses/study-guide/educations/31267'
+
+# Postgraduate courses for industry and academia at BioTech Delft (smaller navy cards). when: next edition.
+postgrad:
+  - title: Microbial Physiology and Fermentation Technology
+    short: MPFT
+    where: BioTech Delft · Advanced course
+    role: Lecturer
+    when: 'Next edition: 11–21 January 2027'
+    summary: Two-week course linking metabolic stoichiometry, kinetics and systems physiology to strain design and large-scale fermentation.
+    url: 'https://biotechdelft.com/courses/microbial-physiology-and-fermentation-technology/'
+  - title: Multi-Omics approaches for Improvement of Industrial Microbes
+    short: Multi-Omics
+    where: BioTech Delft · Advanced course
+    role: Lecturer and course board member
+    when: 'Next edition: 29 May – 2 June 2028'
+    summary: Five-day course on integrating metabolomics, fluxomics, transcriptomics and proteomics with modeling to find targets for improving industrial microbes.
+    url: 'https://biotechdelft.com/courses/integrated-multi-omics-approaches-for-improvement-of-industrial-microbes/'
+
+# Workshops, schools and courses outside TU Delft (newest first). role: what we did.
+workshops:
+  - title: 'BiomeFUN — From Genomic Analysis to Functional Models in Microbiomes and Synthetic Consortia'
+    when: September 2025
+    where: Belgrade, Serbia
+    role: Co-chair (with Ivica Dimkić, University of Belgrade); lecture and hands-on practicals
+    summary: Five-day practical workshop for PhD students and postdocs, supported by FEMS — metagenomics, genome-scale metabolic modeling and structure–function landscapes of microbial consortia.
+    url: 'https://bgmicrobiomes.github.io/'
+  - title: 'Summer School: Data Integration with Microbial Networks and Community Models'
+    when: September 2025
+    where: KU Leuven, Belgium
+    role: Invited lecturer
+    url: ''
+  - title: School of Artificial Intelligence Applied to Microbiomes
+    when: September 2025
+    where: INRAE & Université Paris-Saclay, France
+    role: Invited lecturer
+    url: ''
+  - title: COMETS Hackathon
+    when: March 2019
+    where: Boston University, USA
+    role: Instructor, COMETS developer team
+    url: 'https://www.runcomets.org/'
+
+# Student projects: counted automatically from src/data/people.yaml. Text shown with it:
+projects: >-
+  MSc and BSc students do their end projects in the lab — computational, experimental or both. Our alumni have
+  moved on to both PhDs and industry.

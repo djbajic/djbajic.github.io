@@ -1,0 +1,41 @@
+---
+// The epistasis parallelogram from the lab's figure: F_B in backgrounds 0, A, C, AC.
+const O = [70, 440], a = [165, 34], b = [140, -118], c = [150, -250];
+const v = (i: number, j: number, k: number) => [O[0] + i * a[0] + j * b[0] + k * c[0], O[1] + i * a[1] + j * b[1] + k * c[1]];
+const V = { '0': v(0,0,0), A: v(1,0,0), B: v(0,1,0), C: v(0,0,1), AB: v(1,1,0), AC: v(1,0,1), BC: v(0,1,1), ABC: v(1,1,1) };
+const grey: [keyof typeof V, keyof typeof V][] = [['0','A'],['0','C'],['A','AB'],['A','AC'],['C','AC'],['C','BC'],['AC','ABC']];
+const L = (p: keyof typeof V, q: keyof typeof V) => ({ x1: V[p][0], y1: V[p][1], x2: V[q][0], y2: V[q][1] });
+const { animate = false } = Astro.props;
+---
+<svg viewBox="20 0 680 500" class:list={['fig-cube', { animate }]} role="img" aria-label="Epistasis on a three-species landscape: the effect of adding species B depends on its background">
+  <g stroke="#d3d5dc" stroke-width="3" stroke-linecap="round">{grey.map(([p, q]) => <line {...L(p, q)} />)}</g>
+  <g stroke-width="5" stroke-linecap="round" class="edges">
+    <line {...L('0','B')} stroke="var(--ink)" />
+    <line {...L('B','AB')} stroke="var(--c-olive)" />
+    <line {...L('B','BC')} stroke="var(--c-cyan)" />
+    <line {...L('AB','ABC')} stroke="var(--c-magenta)" class="eps" />
+    <line {...L('BC','ABC')} stroke="var(--ink)" />
+  </g>
+  {(['0','A','C','AC'] as const).map((k) => <circle cx={V[k][0]} cy={V[k][1]} r="8" fill="#d3d5dc" />)}
+  {(['0','B','AB','BC','ABC'] as const).map((k) => <circle cx={V[k][0]} cy={V[k][1]} r="10" fill="var(--ink)" />)}
+  <g class="lbl">
+    <text x={V['0'][0] - 26} y={V['0'][1] + 8}>0</text>
+    <text x={V.B[0] - 4} y={V.B[1] + 34}>B</text>
+    <text x={V.AB[0] - 10} y={V.AB[1] + 36}>AB</text>
+    <text x={V.BC[0] - 16} y={V.BC[1] - 20}>BC</text>
+    <text x={V.ABC[0] - 22} y={V.ABC[1] - 20}>ABC</text>
+  </g>
+  <g class="math">
+    <text x={(V['0'][0] + V.B[0]) / 2 - 62} y={(V['0'][1] + V.B[1]) / 2 + 6} fill="var(--ink)">F<tspan dy="-18" font-size="26">0</tspan><tspan dx="-15" dy="32" font-size="26">B</tspan></text>
+    <text x={(V.B[0] + V.AB[0]) / 2 - 10} y={(V.B[1] + V.AB[1]) / 2 - 16} fill="var(--c-olive)">F<tspan dy="-18" font-size="26">B</tspan><tspan dx="-16" dy="32" font-size="26">A</tspan></text>
+    <text x={(V.B[0] + V.BC[0]) / 2 - 70} y={(V.B[1] + V.BC[1]) / 2} fill="var(--c-cyan)">F<tspan dy="-18" font-size="26">B</tspan><tspan dx="-16" dy="32" font-size="26">C</tspan></text>
+    <text x={(V.AB[0] + V.ABC[0]) / 2 + 22} y={(V.AB[1] + V.ABC[1]) / 2 + 10} fill="var(--c-cyan)" class="eps-lbl">F<tspan dy="-18" font-size="26">B</tspan><tspan dx="-16" dy="32" font-size="26">C</tspan><tspan dy="-12" fill="var(--ink-3)"> + </tspan><tspan fill="var(--c-magenta)">ε</tspan><tspan dy="-18" font-size="26" fill="var(--c-magenta)">B</tspan><tspan dx="-16" dy="32" font-size="26" fill="var(--c-magenta)">AC</tspan></text>
+  </g>
+</svg>
+<style>
+  .lbl text { font: 26px var(--f-sans); fill: var(--ink); }
+  .math text { font: italic 44px var(--f-serif); }
+  .fig-cube.animate .eps, .fig-cube.animate .eps-lbl { opacity: 0; transition: opacity .8s ease .6s; }
+  :global(.active) .fig-cube.animate .eps, :global(.active) .fig-cube.animate .eps-lbl { opacity: 1; }
+  @media (prefers-reduced-motion: reduce) { .fig-cube.animate .eps, .fig-cube.animate .eps-lbl { opacity: 1; } }
+</style>

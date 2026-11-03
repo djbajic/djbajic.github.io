@@ -1,0 +1,94 @@
+---
+import Base from '../layouts/Base.astro';
+import { existsSync } from 'node:fs';
+import { join } from 'node:path';
+import { people, collaborators } from '../data/content';
+import CollabMap from '../components/CollabMap.astro';
+const hasLogo = (f: string) => existsSync(join(process.cwd(), 'public/img/partners', f));
+// Order on the page = order in src/data/people.yaml.
+const current = people.filter((p) => p.status === 'current');
+const alumni = people.filter((p) => p.status === 'alumni');
+const initials = (n: string) => ((w) => w[0][0] + w[w.length - 1][0].toUpperCase())(n.split(' '));
+const linkLabel: Record<string, string> = { cv: 'CV', scholar: 'Scholar', orcid: 'ORCID', github: 'GitHub' };
+---
+<Base title="People">
+  <section class="wrap page-head"><p class="eyebrow">People</p><h1>The team</h1></section>
+  <section class="wrap">
+    <div class="team">
+      {current.map((p) => (
+        <article class="m">
+          {p.photo ? <img src={`/img/team/${p.photo}`} alt={p.name} loading="lazy" /> : <div class="ph" aria-hidden="true">{initials(p.name)}</div>}
+          <h3>{p.name}</h3>
+          <p class="role">{p.role}{p.title && ` · ${p.title}`}</p>
+          {p.bio && <p class="bio">{p.bio}</p>}
+          {p.links && <p class="links">{Object.entries(p.links).map(([k, v]) => <a href={v}>{linkLabel[k] ?? k}</a>)}</p>}
+        </article>
+      ))}
+    </div>
+    <p class="eyebrow sec">Friends and collaborators</p>
+    <div class="collab">
+      {collaborators.map((c, i) => {
+        const logos = (c.logos ?? []).filter(hasLogo);
+        return (
+          <article class="inst" data-key={`c${i}`}>
+            <div class="logos">
+              {logos.length
+                ? logos.map((f) => <img src={`/img/partners/${f}`} alt="" loading="lazy" />)
+                : <span class="inst-text">{c.institution}</span>}
+            </div>
+            <div class="inst-body">
+              <p class="inst-name">{c.institution}{c.place && <span> · {c.place}</span>}</p>
+              <ul>
+                {c.people.map((x) => <li>{x.url ? <a href={x.url} target="_blank" rel="noopener">{x.name}</a> : x.name}</li>)}
+              </ul>
+            </div>
+          </article>
+        );
+      })}
+    </div>
+    <div class="map-wrap"><CollabMap /></div>
+    <p class="eyebrow sec">Alumni</p>
+    <ul class="alumni">
+      {alumni.map((p) => (
+        <li>
+          <strong>{p.name}</strong>
+          <span class="what">{p.role}{p.years && `, ${p.years}`}</span>
+          {p.honors && <span class="hon">{p.honors}</span>}
+          {p.now && <span class="now">currently {p.nowUrl ? <a href={p.nowUrl} target="_blank" rel="noopener">{p.now}</a> : p.now}</span>}
+        </li>
+      ))}
+    </ul>
+  </section>
+</Base>
+<style>
+  .sec { margin: 88px 0 24px; }
+  .team { display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 40px 32px; }
+  .m img, .m .ph { width: 100%; aspect-ratio: 1; object-fit: cover; border-radius: 12px; background: var(--paper-2); }
+  .m .ph { display: grid; place-items: center; font-family: var(--f-display); font-weight: 500; font-size: 44px; color: var(--ink-3); }
+  .m h3 { font-size: 17px; font-weight: 600; margin-top: 14px; }
+  .role { color: var(--ink-3); font-size: 14.5px; margin: 2px 0 8px; }
+  .bio { font-size: 14.5px; color: var(--ink-2); }
+  .links { display: flex; flex-wrap: wrap; gap: 4px 14px; font-size: 14px; margin: 0; }
+  .collab { display: grid; grid-template-columns: repeat(auto-fill, minmax(360px, 1fr)); border-top: 1px solid var(--rule); }
+  .inst { display: grid; grid-template-columns: 140px 1fr; gap: 20px; align-items: center; padding: 20px 20px 20px 0; border-bottom: 1px solid var(--rule); }
+  .logos { display: flex; flex-direction: column; align-items: flex-start; justify-content: center; gap: 6px; height: 72px; }
+  .logos img { max-width: 140px; max-height: 64px; width: auto; height: auto; object-fit: contain; }
+  .logos img + img { max-height: 28px; }
+  .inst-text { font-family: var(--f-display); font-weight: 600; font-size: 13px; line-height: 1.2; color: var(--ink-2); }
+  .inst-name { font-family: var(--f-mono); font-size: 11.5px; letter-spacing: .03em; color: var(--ink-3); margin: 0 0 6px; text-transform: uppercase; }
+  .inst-name span { text-transform: none; letter-spacing: 0; }
+  .inst ul { list-style: none; margin: 0; padding: 0; display: grid; gap: 2px; }
+  .inst li { font-size: 15.5px; font-weight: 500; }
+  .inst { transition: background .2s, box-shadow .2s; border-radius: 10px; }
+  .inst:global(.hl) { background: color-mix(in srgb, var(--c-cyan) 7%, #fff); box-shadow: inset 3px 0 0 var(--c-magenta); }
+  .map-wrap { margin-top: 40px; }
+  .inst li a { text-decoration-color: color-mix(in srgb, var(--c-cyan) 50%, transparent); }
+  .inst li a:hover { color: var(--c-cyan); }
+  .alumni { list-style: none; padding: 0; margin: 0; max-width: 820px; border-bottom: 1px solid var(--rule); }
+  .alumni li { display: flex; flex-wrap: wrap; align-items: baseline; gap: 4px 14px; padding: 12px 0; border-top: 1px solid var(--rule); font-size: 15px; }
+  .alumni .what { color: var(--ink-3); }
+  .alumni .hon { font-family: var(--f-mono); font-size: 11.5px; letter-spacing: .04em; color: var(--c-magenta); border: 1px solid color-mix(in srgb, var(--c-magenta) 40%, transparent); border-radius: 999px; padding: 1px 8px; }
+  .alumni .now { margin-left: auto; color: var(--ink-2); }
+  .alumni .now::before { content: '→ '; color: var(--ink-3); }
+  @media (max-width: 760px) { .alumni .now { margin-left: 0; width: 100%; } }
+</style>

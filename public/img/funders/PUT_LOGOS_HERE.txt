@@ -1,0 +1,5 @@
+Drop funder logos in this folder, then reference them by file name in src/data/funders.yaml (field: logo).
+Expected names right now: nwo.svg and zeb.svg (you can change them in funders.yaml).
+Best format: SVG, horizontal version, transparent background. PNG works too (use ~200 px height).
+Logos are displayed in grayscale and turn to full color on hover.
+Until a file exists, the funder's name is shown as text instead.

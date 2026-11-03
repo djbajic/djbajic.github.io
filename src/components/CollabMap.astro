@@ -1,0 +1,157 @@
+---
+// Collaboration map: dotted world + Europe panel. Points come from `map:` in
+// src/data/collaborators.yaml and src/data/industry.yaml. Hovering a point highlights the
+// matching card on the page (and vice versa) via data-key.
+import dots from '../data/map-dots.json';
+import { collaborators, industry } from '../data/content';
+
+type P = { key: string; kind: 'home' | 'academic' | 'industry'; name: string; place?: string; lines: string[]; lat: number; lon: number };
+const pts: P[] = [];
+collaborators.forEach((c, i) => {
+  if (!c.map) return;
+  pts.push({
+    key: `c${i}`, kind: c.institution === 'TU Delft' ? 'home' : 'academic', name: c.institution, place: c.place,
+    lines: c.people.map((p) => p.name), lat: c.map[0], lon: c.map[1],
+  });
+});
+industry.forEach((c, i) => {
+  if (!c.map) return;
+  pts.push({ key: `i${i}`, kind: 'industry', name: c.name, place: c.place, lines: c.summary ? [c.summary] : [], lat: c.map[0], lon: c.map[1] });
+});
+const home = pts.find((p) => p.kind === 'home') ?? { lat: 52.0, lon: 4.36 };
+
+// World: equirectangular, lon -170..180, lat -56..76
+const W = { w: 1000, lon0: -170, lon1: 180, lat0: -56, lat1: 76 };
+const Wh = (W.w * (W.lat1 - W.lat0)) / (W.lon1 - W.lon0);
+const wx = (lon: number) => ((lon - W.lon0) / (W.lon1 - W.lon0)) * W.w;
+const wy = (lat: number) => ((W.lat1 - lat) / (W.lat1 - W.lat0)) * Wh;
+// Europe: lon -11..32, lat 35..62, lon compressed by cos(48°)
+const E = { lon0: -10, lon1: 27, lat0: 36, lat1: 59.5, k: Math.cos((48 * Math.PI) / 180), s: 20 };
+const Ew = (E.lon1 - E.lon0) * E.k * E.s, Eh = (E.lat1 - E.lat0) * E.s;
+const ex = (lon: number) => (lon - E.lon0) * E.k * E.s;
+const ey = (lat: number) => (E.lat1 - lat) * E.s;
+const inEurope = (p: { lat: number; lon: number }) => p.lon > E.lon0 && p.lon < E.lon1 && p.lat > E.lat0 && p.lat < E.lat1;
+
+const arc = (x1: number, y1: number, x2: number, y2: number, bend = 0.22) => {
+  const mx = (x1 + x2) / 2, my = (y1 + y2) / 2, dx = x2 - x1, dy = y2 - y1;
+  const L = Math.hypot(dx, dy) || 1;
+  let nx = -dy / L, ny = dx / L;
+  if (ny > 0) { nx = -nx; ny = -ny; } // bow upwards
+  return `M${x1.toFixed(1)},${y1.toFixed(1)} Q${(mx + nx * L * bend).toFixed(1)},${(my + ny * L * bend).toFixed(1)} ${x2.toFixed(1)},${y2.toFixed(1)}`;
+};
+const diamond = (x: number, y: number, r: number) => `M${x},${y - r} L${x + r},${y} L${x},${y + r} L${x - r},${y} Z`;
+const box = { x: wx(E.lon0), y: wy(E.lat1), w: wx(E.lon1) - wx(E.lon0), h: wy(E.lat0) - wy(E.lat1) };
+const tipData = Object.fromEntries(pts.map((p) => [p.key, { name: p.name, place: p.place, lines: p.lines, kind: p.kind }]));
+---
+<div class="cmap" data-cmap>
+  <div class="panel world">
+    <p class="panel-label">World</p>
+    <svg viewBox={`0 0 ${W.w} ${Wh.toFixed(0)}`} role="img" aria-label="World map of the lab's collaborators">
+      <g class="dots">{dots.world.map(([lo, la]) => <circle cx={wx(lo).toFixed(1)} cy={wy(la).toFixed(1)} r="1.35" />)}</g>
+      <rect class="eu-box" x={box.x} y={box.y} width={box.w} height={box.h} rx="4" />
+      <g class="arcs">
+        {pts.filter((p) => p.kind !== 'home' && !inEurope(p)).map((p) => (
+          <path d={arc(wx(home.lon), wy(home.lat), wx(p.lon), wy(p.lat), 0.18)} data-key={p.key} class:list={['arc', p.kind]} />
+        ))}
+      </g>
+      <g class="pts">
+        {pts.filter((p) => !inEurope(p)).map((p) => (
+          p.kind === 'industry'
+            ? <path d={diamond(wx(p.lon), wy(p.lat), 6)} data-key={p.key} class="pt industry" tabindex="0" />
+            : <circle cx={wx(p.lon)} cy={wy(p.lat)} r="5" data-key={p.key} class="pt academic" tabindex="0" />
+        ))}
+        <circle cx={wx(home.lon)} cy={wy(home.lat)} r="5.5" class="pt home-pt" data-key={pts.find((p) => p.kind === 'home')?.key} />
+      </g>
+    </svg>
+  </div>
+  <div class="panel europe">
+    <p class="panel-label">Europe</p>
+    <svg viewBox={`0 0 ${Ew.toFixed(0)} ${Eh.toFixed(0)}`} role="img" aria-label="Map of the lab's collaborators in Europe">
+      <g class="dots">{dots.europe.map(([lo, la]) => <circle cx={ex(lo).toFixed(1)} cy={ey(la).toFixed(1)} r="1" />)}</g>
+      <g class="arcs">
+        {pts.filter((p) => p.kind !== 'home' && inEurope(p)).map((p) => (
+          <path d={arc(ex(home.lon), ey(home.lat), ex(p.lon), ey(p.lat), 0.2)} data-key={p.key} class:list={['arc', p.kind]} />
+        ))}
+      </g>
+      <g class="pts">
+        {pts.filter((p) => inEurope(p) && p.kind !== 'home').map((p) => (
+          p.kind === 'industry'
+            ? <path d={diamond(ex(p.lon), ey(p.lat), 7.5)} data-key={p.key} class="pt industry" tabindex="0" />
+            : <circle cx={ex(p.lon)} cy={ey(p.lat)} r="6" data-key={p.key} class="pt academic" tabindex="0" />
+        ))}
+        {pts.filter((p) => p.kind === 'home').map((p) => (
+          <g data-key={p.key} class="pt home-pt" tabindex="0">
+            <circle cx={ex(p.lon)} cy={ey(p.lat)} r="11" class="halo" />
+            <circle cx={ex(p.lon)} cy={ey(p.lat)} r="6.5" />
+          </g>
+        ))}
+      </g>
+    </svg>
+  </div>
+  <div class="legend">
+    <span><i class="lg home"></i>Delft (home)</span>
+    <span><i class="lg academic"></i>Academic partner</span>
+    <span><i class="lg industry"></i>Industry partner</span>
+  </div>
+  <div class="tip" data-tip hidden></div>
+</div>
+<script define:vars={{ tipData }}>
+  const root = document.querySelector('[data-cmap]');
+  if (root) {
+    const tip = root.querySelector('[data-tip]');
+    const all = (key) => document.querySelectorAll(`[data-key="${key}"]`);
+    let cur = null;
+    const on = (key, el) => {
+      if (cur) off();
+      cur = key;
+      all(key).forEach((n) => n.classList.add('hl'));
+      const d = tipData[key];
+      if (d && el && root.contains(el)) {
+        tip.innerHTML = `<b>${d.name}</b>${d.place ? `<span>${d.place}</span>` : ''}${d.lines.length ? `<em>${d.lines.join(' · ')}</em>` : ''}`;
+        tip.hidden = false;
+        const r = el.getBoundingClientRect(), R = root.getBoundingClientRect();
+        let x = r.left + r.width / 2 - R.left, y = r.top - R.top;
+        tip.style.left = `${Math.max(8, Math.min(R.width - 268, x - 130))}px`;
+        tip.style.top = `${Math.max(0, y - tip.offsetHeight - 10)}px`;
+      }
+    };
+    const off = () => { if (cur) all(cur).forEach((n) => n.classList.remove('hl')); cur = null; tip.hidden = true; };
+    document.querySelectorAll('[data-key]').forEach((el) => {
+      const k = el.getAttribute('data-key');
+      el.addEventListener('mouseenter', () => on(k, el.closest('[data-cmap]') ? el : null));
+      el.addEventListener('mouseleave', off);
+      el.addEventListener('focus', () => on(k, el.closest('[data-cmap]') ? el : null));
+      el.addEventListener('blur', off);
+      el.addEventListener('click', () => (cur === k ? off() : on(k, el.closest('[data-cmap]') ? el : null)));
+    });
+  }
+</script>
+<style>
+  .cmap { position: relative; display: grid; grid-template-columns: 1.45fr 1fr; gap: 20px; }
+  .panel { position: relative; background: #fff; padding: 14px 0; }
+  .panel-label { position: absolute; top: 12px; left: 16px; margin: 0; font-family: var(--f-mono); font-size: 11.5px; letter-spacing: .08em; text-transform: uppercase; color: var(--ink-3); }
+  .panel svg { width: 100%; height: auto; display: block; overflow: visible; }
+  .world { align-self: center; }
+  .dots circle { fill: #cfd2da; }
+  .eu-box { fill: none; stroke: var(--ink-3); stroke-dasharray: 3 3; stroke-width: 1; opacity: .7; }
+  .arc { pointer-events: none; fill: none; stroke: var(--c-cyan); stroke-width: 1.2; opacity: .45; transition: stroke .2s, opacity .2s, stroke-width .2s; }
+  .arc.industry { stroke: var(--c-olive); stroke-dasharray: 4 3; }
+  .arc.hl { stroke: var(--c-magenta); opacity: 1; stroke-width: 2.2; }
+  .pt { cursor: pointer; transition: transform .15s; transform-box: fill-box; transform-origin: center; outline: none; }
+  .pt.academic { fill: var(--c-cyan); stroke: #fff; stroke-width: 1.5; }
+  .pt.industry { fill: var(--c-olive); stroke: #fff; stroke-width: 1.5; }
+  .pt.hl { fill: var(--c-magenta); transform: scale(1.45); }
+  .home-pt circle, circle.home-pt { fill: var(--ink); stroke: #fff; stroke-width: 1.5; }
+  .home-pt .halo { fill: none; stroke: var(--ink); stroke-width: 1.2; opacity: .35; }
+  .legend { grid-column: 1 / -1; display: flex; flex-wrap: wrap; gap: 8px 24px; font-size: 13.5px; color: var(--ink-2); }
+  .legend span { display: inline-flex; align-items: center; gap: 8px; }
+  .lg { display: inline-block; width: 11px; height: 11px; border-radius: 50%; }
+  .lg.home { background: var(--ink); box-shadow: 0 0 0 3px #fff, 0 0 0 4px rgba(17,19,24,.35); }
+  .lg.academic { background: var(--c-cyan); }
+  .lg.industry { background: var(--c-olive); border-radius: 1px; transform: rotate(45deg) scale(.85); }
+  .tip { position: absolute; z-index: 5; width: 260px; background: var(--ink); color: #fff; border-radius: 10px; padding: 10px 12px; font-size: 13px; line-height: 1.4; pointer-events: none; box-shadow: 0 10px 24px -12px rgba(0,0,0,.4); }
+  .tip :global(b) { display: block; font-weight: 600; }
+  .tip :global(span) { display: block; font-family: var(--f-mono); font-size: 11px; color: #aeb3c2; margin: 2px 0 4px; }
+  .tip :global(em) { font-style: normal; color: #dfe2ea; }
+  @media (max-width: 900px) { .cmap { grid-template-columns: 1fr; } }
+</style>

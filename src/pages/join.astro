@@ -1,0 +1,27 @@
+---
+import Base from '../layouts/Base.astro';
+import { site } from '../data/content';
+---
+<Base title="Join">
+  <section class="wrap page-head">
+    <p class="eyebrow">Join</p>
+    <h1>Work with us</h1>
+    <p>We are a small, quantitative lab that combines theory, models and experiments. We look for people who are curious about principles in biological systems. Feel free to drop a line and let us know why would you like to join our group. </p>
+  </section>
+  <section class="wrap roles">
+    <article><h2>PhD students</h2><p>Positions are advertised on the TU Delft vacancies page when funded. Backgrounds in biology, bioengineering, physics, applied mathematics or computer science are all welcome.</p></article>
+    <article><h2>Postdocs</h2><p>We support applications for independent fellowships (e.g. Marie Skłodowska-Curie, NWO Veni). Get in touch well ahead of deadlines with a CV and a short statement of interest.</p></article>
+    <article><h2>MSc & BSc students</h2><p>TU Delft students can do their end project with us — computational, experimental, or both. Email us with your interests and timeline.</p></article>
+  </section>
+  <section class="wrap">
+    <a class="btn solid" href={`mailto:${site.email}?subject=Joining%20the%20lab`}><span class="arrow">Email {site.email}</span></a>
+  </section>
+</Base>
+<style>
+  .roles { display: grid; grid-template-columns: repeat(3, 1fr); gap: 40px; margin-bottom: 48px; }
+  .roles article { border-top: 2px solid var(--ink); padding-top: 18px; }
+  .roles article:nth-child(1) { border-color: var(--c-cyan); } .roles article:nth-child(2) { border-color: var(--c-olive); } .roles article:nth-child(3) { border-color: var(--c-magenta); }
+  .roles h2 { font-family: var(--f-display); font-weight: 600; letter-spacing: -0.025em; font-size: 26px; margin-bottom: 10px; }
+  .roles p { color: var(--ink-2); font-size: 16px; }
+  @media (max-width: 800px) { .roles { grid-template-columns: 1fr; } }
+</style>

@@ -1,0 +1,20 @@
+---
+// Lab mark: three pathways funnel into one core and fan out again (cyan in, magenta out).
+// `size` = height in px. `mono` draws everything in the current text color.
+const { size = 30, mono = false } = Astro.props;
+const cin = mono ? 'currentColor' : 'var(--c-cyan)';
+const cout = mono ? 'currentColor' : 'var(--c-magenta)';
+const ends: [number, number][] = [[5, 14], [5, 32], [5, 50], [59, 14], [59, 32], [59, 50]];
+---
+<svg width={size * 1.36} height={size} viewBox="0 9 64 46" aria-hidden="true" class="bowtie">
+  <g fill="none" stroke-linecap="round" stroke-width="6">
+    <path d="M5 14 C 20 14, 20 32, 32 32" stroke={cin} />
+    <path d="M5 50 C 20 50, 20 32, 32 32" stroke={cin} />
+    <path d="M5 32 H32" stroke={cin} />
+    <path d="M32 32 C 44 32, 44 14, 59 14" stroke={cout} />
+    <path d="M32 32 C 44 32, 44 50, 59 50" stroke={cout} />
+    <path d="M32 32 H59" stroke={cout} />
+  </g>
+  {ends.map(([x, y]) => <circle cx={x} cy={y} r="3.5" fill="currentColor" />)}
+  <circle cx="32" cy="32" r="8" fill="currentColor" />
+</svg>

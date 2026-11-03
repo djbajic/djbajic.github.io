@@ -1,0 +1,46 @@
+# People — edit here. photo: file in public/img/team/ (optional). status: current | alumni
+- name: Djordje Bajić
+  role: Principal Investigator
+  title: Assistant Professor, TU Delft
+  photo: djordje_cropped.webp
+  status: current
+  bio: >-
+    Djordje is interested in how structure gives rise to function in biological systems — how genes in a
+    genome combine into a trait, and how species in a community combine into a function. Before Delft he was a
+    postdoc with Álvaro Sánchez at Yale (Ecology & Evolutionary Biology), and did his PhD in biophysics with
+    Juan Poyatos at the Centro Nacional de Biotecnología (CSIC), Madrid.
+  links:
+    scholar: https://scholar.google.com/citations?user=6tfrMqYAAAAJ
+    orcid: https://orcid.org/0000-0002-6716-7898
+    github: https://github.com/djbajic
+    cv: /CV_Djordje_Bajic.pdf
+- name: Minke Gabriëls
+  role: PhD candidate
+  photo: minke.webp
+  status: current
+  bio: >-
+    Engineering the function of microbial communities with genome-scale metabolic models and fitness-landscape
+    analysis, with a focus on electrosynthetic biofilm communities (CO₂ + electricity → product).
+- name: Uroš Gojković
+  role: PhD candidate
+  photo: uros.webp
+  status: current
+  bio: >-
+    Rationally steering community composition through metabolic interventions, using model communities
+    assembled both in high throughput and in bioreactors.
+# Alumni, newest first. honors (optional, e.g. cum laude). now / nowUrl: current position and a link to it — shown as "currently …".
+- { name: Rienk van Vliet, role: MSc project, years: Spring 2026, honors: cum laude, status: alumni, now: 'PhD candidate, TU Delft', nowUrl: 'https://www.tudelft.nl/tnw/over-faculteit/afdelingen/biotechnology/research-sections/environmental-biotechnology/robbert-kleerebezem/people' }
+- { name: Farah May, role: BSc project, years: Spring 2026, status: alumni, now: 'MSc Life Science & Technology, TU Delft', nowUrl: '' }
+- { name: Timmy Páez-Watson, role: Postdoc, years: 2025, status: alumni, now: 'Modeling Architect, Holomicrobiome Institute', nowUrl: 'https://scholar.google.com/citations?user=APTfVLEAAAAJ' }
+- { name: Vladimir Koselka, role: MSc project, years: Spring 2025, honors: cum laude, status: alumni, now: PhD student at Aarhus University, nowUrl: 'https://corc.au.dk/corc-research/philips-group' }
+- { name: Marco van Oort, role: MSc project, years: Spring 2025, status: alumni, now: 'Teacher, Erasmus College Zoetermeer', nowUrl: '' }
+- { name: Stijn Poppe, role: MSc project, years: Spring 2025, status: alumni, now: 'Vopak', nowUrl: 'https://www.linkedin.com/in/stijn-poppe-419473194/' }
+- { name: Joris Buijs, role: BSc project, years: Spring 2025, status: alumni, now: 'MSc Life Science & Technology, TU Delft', nowUrl: '' }
+- { name: Bjorn Losekoot, role: BSc project, years: Spring 2025, status: alumni, now: 'MSc Life Science & Technology, TU Delft', nowUrl: '' }
+- { name: Fea Tromp, role: BSc project, years: Fall 2024, status: alumni, now: 'MSc Life Science & Technology, TU Delft', nowUrl: 'https://www.linkedin.com/in/fea-tromp-019969276/' }
+- { name: Floris Klein Obbink, role: MSc project, years: 2024, status: alumni, now: 'Rabobank', nowUrl: 'https://www.linkedin.com/in/floris-klein-obbink-9074b9208/' }
+- { name: Eloïse Moniot, role: Erasmus exchange, years: Spring 2024, status: alumni, now: 'Kimi Biodesign', nowUrl: 'https://www.linkedin.com/in/elo%C3%AFse-m-8333ab220/' }
+- { name: Isa van Staalduinen, role: BSc project, years: Spring 2024, status: alumni, now: 'MSc Artificial Intelligence, VU Amsterdam', nowUrl: 'https://www.linkedin.com/in/isa-van-staalduinen-24399a2a1/' }
+- { name: Suzanne van Melzen, role: BSc project, years: Spring 2024, status: alumni, now: 'MSc Bioinformatics and Biocomplexity, Utrecht University', nowUrl: '' }
+- { name: Daan Nolde, role: BSc project, years: Spring 2023, status: alumni, now: 'Statistics Netherlands (CBS)', nowUrl: 'https://www.linkedin.com/in/daan-nolde-41b82021b/' }
+- { name: Julia Verbeek, role: BSc project, years: Spring 2023, status: alumni }

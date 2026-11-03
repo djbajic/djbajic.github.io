@@ -1,0 +1,48 @@
+---
+// Funding strip. Logos come from public/img/funders/ (listed in src/data/funders.yaml).
+// Missing logo file → the funder's name is set as text.
+import { existsSync } from 'node:fs';
+import { join } from 'node:path';
+import { funders } from '../data/content';
+const { compact = false } = Astro.props;
+const hasLogo = (f: string | undefined) => !!f && existsSync(join(process.cwd(), 'public/img/funders', f));
+---
+{funders.length > 0 && (
+  <div class:list={['funders', { compact }]}>
+    {funders.map((f) => (
+      <a class="funder" href={f.url} target="_blank" rel="noopener" title={f.full}>
+        <span class="mark">
+          {hasLogo(f.logo)
+            ? <img src={encodeURI(`/img/funders/${f.logo}`)} alt={f.full} loading="lazy"
+                style={`--h:${f.height ?? 72}px`} />
+            : <span class="wordmark">{f.name}</span>}
+          {f.label && <span class="label">{f.label}</span>}
+        </span>
+        {!compact && f.grant && <span class="grant">{f.grant}</span>}
+      </a>
+    ))}
+  </div>
+)}
+<style>
+  .funders { display: flex; flex-wrap: wrap; gap: 28px 64px; align-items: center; }
+  .funder { display: flex; flex-direction: column; gap: 8px; text-decoration: none; }
+  .mark { display: flex; align-items: center; gap: 18px; }
+  .funder img { height: var(--h); width: auto; max-width: 100%; object-fit: contain; object-position: left center; filter: none; }
+  .label { font-family: var(--f-display); font-weight: 600; font-size: 18px; letter-spacing: -0.01em; line-height: 1.2; max-width: 16ch; padding-left: 18px; border-left: 1px solid var(--rule-2); color: var(--ink); }
+  .wordmark { font-family: var(--f-display); font-weight: 700; font-size: 22px; letter-spacing: -0.02em; color: var(--ink-2); }
+  .grant { font-family: var(--f-mono); font-size: 12px; color: var(--ink-3); }
+  .funder:hover .label { text-decoration: underline; text-underline-offset: 3px; text-decoration-thickness: 1px; }
+  .compact { gap: 12px 32px; }
+  .compact .mark { gap: 10px; }
+  .compact img { height: calc(var(--h) * 0.42); }
+  .compact .label { font-size: 13px; padding-left: 10px; max-width: none; }
+  .compact .wordmark { font-size: 14px; font-weight: 600; }
+  @media (max-width: 600px) {
+    .funder { max-width: 100%; }
+    .mark { flex-wrap: wrap; gap: 8px 12px; }
+    .funder img { height: calc(var(--h) * 0.7); max-width: 100%; }
+    .label { border-left: 0; padding-left: 0; max-width: none; }
+    .compact img { height: calc(var(--h) * 0.4); }
+    .compact .label { font-size: 13px; }
+  }
+</style>

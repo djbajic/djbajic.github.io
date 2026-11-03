@@ -1,0 +1,28 @@
+---
+import BowtieMark from './BowtieMark.astro';
+import Funders from './Funders.astro';
+import { site, nav } from '../data/content';
+---
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="cols">
+      <div>
+        <div style="display:flex;align-items:center;gap:10px;color:var(--ink);margin-bottom:12px"><BowtieMark size={20} /><strong>{site.name}</strong></div>
+        <p style="max-width:44ch">{site.affiliation}</p>
+        <p><a href={`mailto:${site.email}`}>{site.email}</a></p>
+      </div>
+      <div><ul>{nav.map((n) => <li><a href={n.href}>{n.label}</a></li>)}</ul></div>
+      <div><ul>
+        <li><a href={site.links.scholar}>Google Scholar</a></li>
+        <li><a href={site.links.orcid}>ORCID</a></li>
+        <li><a href={site.links.github}>GitHub</a></li>
+      </ul></div>
+    </div>
+    <div class="fund"><span class="eyebrow">Funding</span><Funders compact /></div>
+    <p class="fine">© {new Date().getFullYear()} {site.name}, TU Delft. Figures from the lab’s publications.</p>
+  </div>
+</footer>
+<style>
+  .fund { display: flex; flex-wrap: wrap; align-items: center; gap: 12px 28px; margin-top: 40px; padding-top: 24px; border-top: 1px solid var(--rule); }
+  .fund .eyebrow { margin: 0; }
+</style>
